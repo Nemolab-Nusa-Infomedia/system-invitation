@@ -15,6 +15,10 @@ export default {
             fontFamily: {
                 poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                "help-section":
+                    "url('/public/asset-landing-page/bg-bantuan.png')",
+            },
         },
     },
 
