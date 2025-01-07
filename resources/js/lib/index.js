@@ -1,22 +1,22 @@
 export const menuItems = [
     {
         label: "Beranda",
-        href: "/beranda",
+        href: "#beranda",
     },
     {
         label: "Keunggulan",
-        href: "/keunggulan",
+        href: "#keunggulan",
     },
     {
         label: "Bantuan",
-        href: "/bantuan",
+        href: "#bantuan",
     },
     {
         label: "Template",
-        href: "/template",
+        href: "#template",
     },
     {
         label: "Blog",
-        href: "/blog",
+        href: "#blog",
     },
 ];

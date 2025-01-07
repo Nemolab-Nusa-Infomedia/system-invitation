@@ -5,7 +5,10 @@ import Button from "@/Components/landing-page/Button";
 
 function Beranda() {
     return (
-        <section className="flex justify-center bg-white w-full pt-[90px] ">
+        <section
+            className="flex justify-center bg-white w-full pt-[90px]"
+            id="beranda"
+        >
             <div className="max-w-[1440px] flex h-[507px] px-[104px] py-[40px] justify-between gap-[104px]">
                 <div className="">
                     <img
