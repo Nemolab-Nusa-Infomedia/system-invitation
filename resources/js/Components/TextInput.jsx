@@ -1,8 +1,8 @@
-import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
+import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 
 export default forwardRef(function TextInput(
-    { type = 'text', className = '', isFocused = false, ...props },
-    ref,
+    { type = "text", className = "", icon = "", isFocused = false, ...props },
+    ref
 ) {
     const localRef = useRef(null);
 
@@ -17,14 +17,19 @@ export default forwardRef(function TextInput(
     }, [isFocused]);
 
     return (
-        <input
-            {...props}
-            type={type}
-            className={
-                'rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 ' +
-                className
-            }
-            ref={localRef}
-        />
+        <div className="relative" id="email">
+            <div className="absolute inset-y-0 end-3 flex items-center ps-3.5 pointer-events-none">
+                {icon ? <img src={icon} alt="Email icon" /> : ""}
+            </div>
+            <input
+                {...props}
+                type={type}
+                className={
+                    "mt-1 block h-[53px] w-full rounded-[12px] border-2 border-[#763201] text-[14px] transition-all duration-300 pr-10 focus:border-[#763201] " +
+                    className
+                }
+                ref={localRef}
+            />
+        </div>
     );
 });
