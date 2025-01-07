@@ -1,14 +1,14 @@
 import React from "react";
 
-function Button({ text_color, button_color, text, image, link }) {
+function Button({ text, image, link, button_class, text_class }) {
     return (
         <a href={link}>
             <button
-                className={`flex gap-[10px] bg-[${button_color}] rounded-[10px] py-3 px-4 items-center`}
+                className={`flex gap-[10px] ${button_class} rounded-[10px] items-center`}
             >
                 {image ? <img src={image} alt="icon" /> : null}
                 <p
-                    className={`font-poppins font-medium text-base text-[${text_color}]`}
+                    className={`font-poppins font-medium text-base ${text_class}`}
                 >
                     {text}
                 </p>

@@ -29,9 +29,10 @@ function Beranda() {
                     <div>
                         <Button
                             image={cart}
-                            text_color={"#ffffff"}
-                            button_color={"#F72585"}
+                            text_class={"text-white"}
                             text={"Pesan Sekarang"}
+                            button_class={"py-3 px-5 bg-[#F72585]"}
+                            link={"/"}
                         />
                     </div>
                 </div>
