@@ -42,7 +42,7 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className="max-h-[90px] flex justify-between w-full items-center py-5 px-24 fixed bg-white shadow-md z-10">
+        <nav className="max-h-[90px] flex justify-between w-full items-center py-5 px-24 fixed bg-white shadow-md z-50">
             <div>
                 <img src={logo} alt="logo" className="w-20" />
             </div>
