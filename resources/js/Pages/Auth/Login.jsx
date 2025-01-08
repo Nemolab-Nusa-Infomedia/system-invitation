@@ -35,7 +35,7 @@ export default function Login({ status }) {
         <div className=" font-poppins">
             <Head title="Log in" />
             <NavbarAuth router={"register"} />
-            <div className="flex mb-20 items-center w-[1222px]    mt-[39px]  mx-auto justify-center gap-x-[118px] sm:pt-0">
+            <div className="flex items-center w-[1222px]    mt-[39px]  mx-auto justify-center gap-x-[118px] sm:pt-0">
                 <section className=" w-[504px] h-[406px]  font-poppins ">
                     {/* Children Login */}
 

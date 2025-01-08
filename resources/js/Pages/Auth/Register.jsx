@@ -61,7 +61,7 @@ export default function Register() {
         <div>
             <Head title="Log in" />
             <NavbarAuth router={"login"} />
-            <div className="flex mb-20 items-center  w-[1222px]  mt-[39px] mx-auto justify-center gap-x-[6.875rem] sm:pt-0">
+            <div className="flex  items-center  w-[1222px]  mt-[39px] mx-auto justify-center gap-x-[6.875rem] sm:pt-0">
                 <section className="w-[504px]  font-poppins flex  flex-col gap-y-[23px] text-[#552401]  ">
                     <div className="text h-[95px] flex flex-col ">
                         <h1 className="font-[700]  text-[27px]">
