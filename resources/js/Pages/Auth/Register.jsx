@@ -23,24 +23,25 @@ export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
         email: "",
         no_telephone: "",
-        nama_lengkap: "",
+        name: "",
         password: "",
         password_confirmation: "",
-        nama_perushaan: "",
+        nama_perusahaan: "",
+        remember: false,
     });
 
     // Fungsi untuk mengirimkan form
     const submit = (e) => {
         e.preventDefault(); // Mencegah reload halaman
-        post(route("login"), {
+        post(route("register"), {
             onFinish: () =>
                 reset(
                     "email",
                     "no_telephone",
-                    "nama_lengkap",
+                    "name",
                     "password",
                     "password_confirmation",
-                    "nama_perushaan"
+                    "nama_perusahaan"
                 ),
         });
     };
@@ -54,14 +55,16 @@ export default function Register() {
         }
     };
 
+    console.log(data);
+
     return (
         <div>
             <Head title="Log in" />
             <NavbarAuth router={"login"} />
-            <div className="flex mb-20 items-center w-full px-[6.875rem]  mt-[39px] mx-auto justify-center gap-x-[6.875rem] sm:pt-0">
-                <section className="w-[504px]   ">
-                    <div className="text h-[95px] flex flex-col  mb-2">
-                        <h1 className="font-extrabold text-[27px]">
+            <div className="flex mb-20 items-center  w-[1222px]  mt-[39px] mx-auto justify-center gap-x-[6.875rem] sm:pt-0">
+                <section className="w-[504px]  font-poppins flex  flex-col gap-y-[23px] text-[#552401]  ">
+                    <div className="text h-[95px] flex flex-col ">
+                        <h1 className="font-[700]  text-[27px]">
                             Masuk ke Akun Anda
                         </h1>
                         <p className="text-[16px]">
@@ -73,7 +76,7 @@ export default function Register() {
                     {/* Form untuk login */}
                     <form
                         onSubmit={submit}
-                        className="flex flex-col gap-y-[15px] w-[451px]"
+                        className="flex flex-col gap-y-[24px] w-[451px]"
                     >
                         {/* Input untuk email */}
                         <div>
@@ -123,12 +126,12 @@ export default function Register() {
                                 id="fullName"
                                 type="text"
                                 name="fullName"
-                                value={data.nama_lengkap}
+                                value={data.name}
                                 autoComplete="nama lengkap"
                                 placeholder="Nama Lengkap"
                                 icon={userIcon}
                                 onChange={(e) =>
-                                    setData("nama_lengkap", e.target.value)
+                                    setData("name", e.target.value)
                                 } // Mengupdate state email
                             />
                             <InputError
@@ -137,78 +140,84 @@ export default function Register() {
                             />
                         </div>
                         {/* Input untuk password dan konfirmasi password */}
-                        <div className="flex gap-[12px]">
-                            {["password", "confirmPassword"].map(
-                                (field, index) => (
-                                    <div
-                                        className="relative flex w-full border"
-                                        key={index}
-                                    >
-                                        <input
-                                            id={field}
-                                            type={
-                                                field === "password"
-                                                    ? passwordVisible
+                        <div>
+                            <div className="flex gap-[12px]">
+                                {["password", "password_confirmation"].map(
+                                    (field, index) => (
+                                        <div
+                                            className="relative flex w-full border"
+                                            key={index}
+                                        >
+                                            <input
+                                                id={field}
+                                                type={
+                                                    field === "password"
+                                                        ? passwordVisible
+                                                            ? "text"
+                                                            : "password"
+                                                        : confirmPasswordVisible
                                                         ? "text"
                                                         : "password"
-                                                    : confirmPasswordVisible
-                                                    ? "text"
-                                                    : "password"
-                                            }
-                                            name={field}
-                                            className="mt-1 block h-[53px] w-full rounded-[12px] border-2 border-[#763201] text-[14px] transition-all duration-300 pr-10"
-                                            value={data[field]}
-                                            placeholder={
-                                                field === "password"
-                                                    ? "Kata Sandi"
-                                                    : " Konfirmasi Kata Sandi"
-                                            }
-                                            autoComplete={
-                                                field === "password"
-                                                    ? "current-password"
-                                                    : "new-password"
-                                            }
-                                            onChange={(e) =>
-                                                setData(field, e.target.value)
-                                            } // Mengupdate state untuk password atau konfirmasi password
-                                        />
-                                        <button
-                                            type="button"
-                                            onClick={() =>
-                                                togglePasswordVisibility(field)
-                                            } // Mengubah visibilitas password
-                                            className="absolute inset-y-0 end-0 flex items-center pr-3.5"
-                                            tabIndex={-1}
-                                        >
-                                            <img
-                                                src={
+                                                }
+                                                name={field}
+                                                className="mt-1 block h-[53px] w-full rounded-[12px] border-2 border-[#763201] text-[14px] transition-all duration-300 pr-10"
+                                                value={data[field]}
+                                                placeholder={
                                                     field === "password"
-                                                        ? passwordVisible
+                                                        ? "Kata Sandi"
+                                                        : " Konfirmasi Kata Sandi"
+                                                }
+                                                autoComplete={
+                                                    field === "password"
+                                                        ? "current-password"
+                                                        : "new-password"
+                                                }
+                                                onChange={(e) =>
+                                                    setData(
+                                                        field,
+                                                        e.target.value
+                                                    )
+                                                } // Mengupdate state untuk password atau konfirmasi password
+                                            />
+                                            <button
+                                                type="button"
+                                                onClick={() =>
+                                                    togglePasswordVisibility(
+                                                        field
+                                                    )
+                                                } // Mengubah visibilitas password
+                                                className="absolute inset-y-0 end-0 flex items-center pr-3.5"
+                                                tabIndex={-1}
+                                            >
+                                                <img
+                                                    src={
+                                                        field === "password"
+                                                            ? passwordVisible
+                                                                ? showEye
+                                                                : hideEye
+                                                            : confirmPasswordVisible
                                                             ? showEye
                                                             : hideEye
-                                                        : confirmPasswordVisible
-                                                        ? showEye
-                                                        : hideEye
-                                                }
-                                                alt={
-                                                    field === "password"
-                                                        ? passwordVisible
-                                                            ? "Hide password"
-                                                            : "Show password"
-                                                        : confirmPasswordVisible
-                                                        ? "Hide confirm password"
-                                                        : "Show confirm password"
-                                                }
-                                            />
-                                        </button>
-                                        <InputError
-                                            message={errors[field]}
-                                            className="mt-2"
-                                        />{" "}
-                                        {/* Menampilkan pesan kesalahan untuk password */}
-                                    </div>
-                                )
-                            )}
+                                                    }
+                                                    alt={
+                                                        field === "password"
+                                                            ? passwordVisible
+                                                                ? "Hide password"
+                                                                : "Show password"
+                                                            : confirmPasswordVisible
+                                                            ? "Hide confirm password"
+                                                            : "Show confirm password"
+                                                    }
+                                                />
+                                            </button>
+                                        </div>
+                                    )
+                                )}
+                            </div>
+                            <InputError
+                                message={errors.password}
+                                className="mt-2"
+                            />
                         </div>
 
                         {/* Nama Perusahaan */}
@@ -217,7 +226,7 @@ export default function Register() {
                                 id="namaPerusahaan"
                                 type="text"
                                 name="namaPerusahaan"
-                                value={data.nama_perushaan}
+                                value={data.nama_perusahaan}
                                 autoComplete="username"
                                 placeholder="Nama Perusahaan (Opsional)"
                                 icon={companyIcon}
@@ -253,16 +262,21 @@ export default function Register() {
                                 Daftar
                             </PrimaryButton>
                         </div>
+                        <span className="text-[18px]">
+                            Saya sudah memiliki akun.{" "}
+                            <Link href={route("login")} className="font-[700]">
+                                Masuk
+                            </Link>
+                        </span>
                     </form>
                 </section>
 
-                <section className="bg-[#E2B933] rounded-[25px] ">
+                <section className="bg-[#E2B933] w-[600px] h-[657px] rounded-[25px] flex justify-center items-center">
                     <img
                         src={registerImg}
                         alt="Register"
                         width={500}
                         height={500}
-                        className="px-[50px] p-[78px]"
                     />
                 </section>
             </div>

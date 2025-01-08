@@ -2,6 +2,8 @@ import Navbar from "@/Components/landing-page/Navbar";
 import Beranda from "./landing-page/Beranda";
 import Keunggulan from "./landing-page/Keunggulan";
 import Bantuan from "./landing-page/Bantuan";
+import FiturPaket from "./landing-page/FiturPaket";
+import Footer from "@/Components/landing-page/Footer";
 
 export default function Index() {
     return (
@@ -10,6 +12,8 @@ export default function Index() {
             <Beranda />
             <Keunggulan />
             <Bantuan />
+            <FiturPaket />
+            <Footer />
         </main>
     );
 }
