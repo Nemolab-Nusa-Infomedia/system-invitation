@@ -7,11 +7,7 @@ function Button({ text, image, link, button_class, text_class }) {
                 className={`flex gap-[10px] ${button_class} rounded-[10px] items-center`}
             >
                 {image ? <img src={image} alt="icon" /> : null}
-                <p
-                    className={`font-poppins font-medium text-base ${text_class}`}
-                >
-                    {text}
-                </p>
+                <p className={`font-poppins ${text_class}`}>{text}</p>
             </button>
         </a>
     );
