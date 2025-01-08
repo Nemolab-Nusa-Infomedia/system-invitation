@@ -6,7 +6,7 @@ import Button from "@/Components/landing-page/Button";
 function Beranda() {
     return (
         <section className="flex justify-center bg-white w-full" id="beranda">
-            <div className="max-w-[1440px] flex pl-[110px]  justify-between items-center">
+            <div className="max-w-[1440px] flex pl-[90px] justify-between items-center ">
                 <div className="flex w-[654px] flex-col justify-center gap-[21px] h-fit">
                     <div className="flex flex-col gap-[21px]">
                         <h1 className="font-bold text-[50px] leading-[75px] font-poppins ">
@@ -29,7 +29,11 @@ function Beranda() {
                     </div>
                 </div>
                 <div className="">
-                    <img src={banner} className="h-auto w-auto" alt="banner" />
+                    <img
+                        src={banner}
+                        className="h-auto w-[695px]"
+                        alt="banner"
+                    />
                 </div>
             </div>
         </section>
