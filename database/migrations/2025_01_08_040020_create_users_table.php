@@ -16,11 +16,16 @@ return new class extends Migration
             $table->string('name'); 
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('no_telephone');
+            $table->string('phone_number');
             $table->string('password');
-            $table->string('nama_perusahaan')->nullable(); // Nama perusahaan (opsional)
+            $table->string('company')->nullable(); // Nama perusahaan (opsional)
+            $table->unsignedBigInteger('packet_id')->nullable();
             $table->rememberToken(); // Token untuk "Ingat Saya"
             $table->timestamps(); // Timestamps untuk created_at dan updated_at
+
+            
+            // Menambahkan foreign key constraint
+            $table->foreign('packet_id')->references('id')->on('packet_invitations')->onDelete('set null');
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
