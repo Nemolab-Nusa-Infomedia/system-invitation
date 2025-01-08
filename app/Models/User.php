@@ -20,10 +20,35 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
-        'no_telephone',
+        'phone_number',
         'password',
-        'nama_perusahaan',
+        'company',
     ];
+
+    public function packetInvitation()
+    {
+        return $this->belongsTo(PacketInvitation::class, 'packet_id');
+    }
+
+    public function invitations()
+    {
+        return $this->hasMany(InvitationCreated::class, 'created_by');
+    }
+
+    public function testimonials()
+    {
+        return $this->hasMany(Testimonial::class);
+    }
+
+    public function payments()
+    {
+        return $this->hasMany(Payment::class);
+    }
+
+    public function events()
+    {
+        return $this->hasMany(Event::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.
@@ -32,6 +57,7 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
+        'packet_id',
         'remember_token',
     ];
 

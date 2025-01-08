@@ -22,11 +22,11 @@ export default function Register() {
     // Menggunakan useForm untuk mengelola data form dan status
     const { data, setData, post, processing, errors, reset } = useForm({
         email: "",
-        no_telephone: "",
+        phone_number: "",
         name: "",
         password: "",
         password_confirmation: "",
-        nama_perusahaan: "",
+        company: "",
         remember: false,
     });
 
@@ -37,11 +37,11 @@ export default function Register() {
             onFinish: () =>
                 reset(
                     "email",
-                    "no_telephone",
+                    "phone_number",
                     "name",
                     "password",
                     "password_confirmation",
-                    "nama_perusahaan"
+                    "company"
                 ),
         });
     };
@@ -105,17 +105,17 @@ export default function Register() {
                                 id="noTelp"
                                 type="text"
                                 name="noTelp"
-                                value={data.no_telephone}
+                                value={data.phone_number}
                                 autoComplete="noTelp"
                                 placeholder="No Telephone"
                                 inputMode="numeric"
                                 icon={whatshappIcon}
                                 onChange={(e) =>
-                                    setData("no_telephone", e.target.value)
+                                    setData("phone_number", e.target.value)
                                 } // Mengupdate state email
                             />
                             <InputError
-                                message={errors.no_telephone}
+                                message={errors.phone_number}
                                 className="mt-2"
                             />
                         </div>
@@ -226,12 +226,12 @@ export default function Register() {
                                 id="namaPerusahaan"
                                 type="text"
                                 name="namaPerusahaan"
-                                value={data.nama_perusahaan}
+                                value={data.company}
                                 autoComplete="username"
                                 placeholder="Nama Perusahaan (Opsional)"
                                 icon={companyIcon}
                                 onChange={(e) =>
-                                    setData("nama_perusahaan", e.target.value)
+                                    setData("company", e.target.value)
                                 } // Mengupdate state email
                             />
                             <InputError
