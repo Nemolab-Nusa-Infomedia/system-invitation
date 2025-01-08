@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "/public/asset-landing-page/logo.png";
+import logo from "/public/asset-landing-page/logo.svg";
 import { menuItems } from "@/lib";
 import Button from "./Button";
 
@@ -42,39 +42,34 @@ function Navbar() {
     }, []);
 
     return (
-        <nav className="max-h-[90px] flex justify-between w-full items-center py-5 px-24 fixed bg-white shadow-md z-50">
+        <nav className="max-h-[126px] flex justify-between w-full items-center py-5 px-[110px] fixed bg-white shadow-md z-50">
             <div>
-                <img src={logo} alt="logo" className="w-20" />
+                <img src={logo} alt="logo" className="w-[180px]" />
             </div>
             <div className="flex gap-[22px] justify-center items-center">
                 {menuItems.map((menu) => (
                     <a
                         key={menu.href}
                         href={menu.href}
-                        className={`relative font-poppins font-medium text-black transition-all
+                        className={`relative font-poppins font-bold  text-xl pb-1 text-black transition-all
                             ${
                                 activeHash === menu.href
-                                    ? "text-[#F72585] after:w-full"
-                                    : "text-gray-600 hover:text-[#F72585] after:w-0"
+                                    ? "text-[#FF61A2] after:w-full"
+                                    : "text-gray-600 hover:text-[#FF61A2] after:w-0"
                             }
-                            after:absolute after:h-[2px] after:bg-[#F72585] after:left-0 after:bottom-[-2px]
-                            after:transition-all after:duration-300 hover:after:w-full`}
+                            after:absolute after:h-[3px] after:bg-[#A31643] after:left-0 after:bottom-[-2px]
+                            after:transition-all after:duration-300 hover:after:w-full `}
                     >
                         {menu.label}
                     </a>
                 ))}
-                <Button
-                    text_class=""
-                    text={"Masuk"}
-                    link={"/"}
-                    button_class="border-2 border-[#F72585] text-[#F72585] py-2 px-6 bg-[#ffffff] transition-all hover:text-[#ffffff] hover:bg-[#F72585]"
-                />
-                <Button
-                    text={"Coba Template Gratis"}
-                    link={"/"}
-                    button_class="border-2 border-[#F72585] py-2 px-6 bg-[#F72585] text-[#ffffff] transition-all hover:bg-[#ffffff] hover:text-[#F72585]"
-                />
             </div>
+            <Button
+                text={"Coba Template Gratis"}
+                link={"/"}
+                button_class="border-2 border-[#FF61A2] py-2 px-6 bg-[#FF61A2] text-[#ffffff] transition-all hover:bg-[#ffffff] hover:text-[#FF61A2]"
+                text_class="font-poppins font-medium text-base"
+            />
         </nav>
     );
 }
