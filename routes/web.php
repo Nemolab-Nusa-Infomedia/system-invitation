@@ -39,7 +39,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::get('/dashboard/help', function () {
         return Inertia::render('Dashboard/FAQ');
-    })->name('faq');
+    })->name('help');
 });
 
 Route::middleware('auth')->group(function () {

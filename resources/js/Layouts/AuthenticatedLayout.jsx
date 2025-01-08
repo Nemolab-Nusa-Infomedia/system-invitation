@@ -4,59 +4,58 @@ import Dropdown from "@/Components/Dropdown";
 import NavLink from "@/Components/NavLink";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
 import { Link, usePage } from "@inertiajs/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import notifIcon from "/public/assets-dashboard/notification.svg";
 import profileImg from "/public/assets-dashboard/profile.png";
+import { menuItemsDashboard } from "@/lib";
 
 export default function AuthenticatedLayout({ header, children }) {
     const user = usePage().props.auth.user;
 
+    const [activeTab, setActiveTab] = useState("");
     const [showingNavigationDropdown, setShowingNavigationDropdown] =
         useState(false);
 
+    const getUrlNavbar = () => {
+        const path = window.location.pathname.split("/").pop();
+        return path === "" ? "dashboard" : path;
+    };
+
+    useEffect(() => {
+        setActiveTab(getUrlNavbar());
+    }, [getUrlNavbar]);
+
     return (
         <div className="min-h-screen bg-gray-100 font-poppins">
-            <nav className="mb-5 shadow-md bg-white h-[96px] px-[110px]">
+            <nav className=" shadow-md bg-white h-[96px] px-[110px]">
                 <div className="mx-auto  h-full">
                     <div className="flex  justify-between items-center h-[96px]">
                         <div className="flex ">
                             <div className="flex shrink-0 items-center">
-                                <Link href="/dashboard">
+                                <Link href={route("dashboard")}>
                                     <span className="text-[20px]">Logo</span>
                                 </Link>
                             </div>
+                        </div>
 
-                            {/* <div className="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                <NavLink
-                                    href={route("dashboard")}
-                                    active={route().current("dashboard")}
+                        <div className="h-[50px] gap-[22px] flex items-center text-[20px] font-[500] transition-all ease-in-out duration-150">
+                            {menuItemsDashboard.map((link) => (
+                                <Link
+                                    key={link.id}
+                                    href={route(link.href)}
+                                    className="relative h-full flex items-center group"
                                 >
-                                    Dashboard
-                                </NavLink>
-                            </div> */}
+                                    {link.label}
+                                    <span
+                                        className={`absolute bottom-0 left-1/2 h-[4px] bg-[#8B4513] transform -translate-x-1/2 transition-all duration-300 ease-in-out ${
+                                            activeTab === link.id
+                                                ? "w-full"
+                                                : "w-0 group-hover:w-full"
+                                        }`}
+                                    ></span>
+                                </Link>
+                            ))}
                         </div>
-
-                        <div className=" h-[50px] gap-[22px] flex items-center text-[20px] font-[500] ">
-                            <Link
-                                href=""
-                                className=" h-full flex items-center hover:border-b-2 hover:border-[#8B4513] border-b-2 border-white ease-in-out transition-all duration-100 "
-                            >
-                                Home
-                            </Link>
-                            <Link
-                                href=""
-                                className=" h-full flex items-center hover:border-b-2 hover:border-[#8B4513] border-b-2 border-white ease-in-out transition-all duration-100 "
-                            >
-                                Pesanan Saya
-                            </Link>
-                            <Link
-                                href=""
-                                className=" h-full flex items-center hover:border-b-2 hover:border-[#8B4513] border-b-2 border-white ease-in-out transition-all duration-100 "
-                            >
-                                Bantuan
-                            </Link>
-                        </div>
-
                         <div className="hidden sm:ms-6 sm:flex sm:items-center ">
                             <div className="relative gap-[20px] flex items-center">
                                 <div className="notif">
@@ -194,7 +193,7 @@ export default function AuthenticatedLayout({ header, children }) {
                 </header>
             )}
 
-            <main className="px-[110px]">{children}</main>
+            <main className="px-[110px] mt-[69px]">{children}</main>
             <Footer />
         </div>
     );
