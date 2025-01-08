@@ -34,11 +34,11 @@ function Footer() {
                                 {items.title}
                             </h1>
                             {items.info.map((info) => (
-                                <span className="flex gap-2 items-center">
+                                <span className="flex gap-2">
                                     <img
                                         src={`${info.image}`}
                                         alt={info.text}
-                                        className="h-[21px] w-[21px]"
+                                        className="h-[21px] w-[21px] mt-[2px]"
                                     />
                                     <p>{info.text}</p>
                                 </span>
