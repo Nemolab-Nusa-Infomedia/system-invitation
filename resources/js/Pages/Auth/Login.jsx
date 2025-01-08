@@ -32,11 +32,11 @@ export default function Login({ status }) {
     };
 
     return (
-        <div className=" ">
+        <div className=" font-poppins">
             <Head title="Log in" />
             <NavbarAuth router={"register"} />
-            <div className="flex mb-20 items-center w-full px-[6.875rem]  mt-[39px]  mx-auto justify-center gap-x-[6.875rem] sm:pt-0">
-                <section className=" w-[504px] h-[406px]   ">
+            <div className="flex mb-20 items-center w-[1222px]    mt-[39px]  mx-auto justify-center gap-x-[118px] sm:pt-0">
+                <section className=" w-[504px] h-[406px]  font-poppins ">
                     {/* Children Login */}
 
                     {/* {status && (
@@ -45,8 +45,8 @@ export default function Login({ status }) {
                     </div>
                 )} */}
 
-                    <div className="text h-[95px] mb-5">
-                        <h1 className="font-extrabold text-[27px]">
+                    <div className="text h-[95px] mb-5 text-[#552401]">
+                        <h1 className="font-[700] font-poppins text-[27px] ">
                             Masuk ke Akun Anda
                         </h1>
                         <p className="text-[16px]">
@@ -60,24 +60,20 @@ export default function Login({ status }) {
                         className=" flex flex-col gap-y-[30px] w-[451px]"
                     >
                         <div className="relative " id="email">
-                            <div className="relative ">
-                                <div className="absolute inset-y-0 end-3 flex items-center ps-3.5 pointer-events-none ">
-                                    <img src={emailIcon} alt="" />
-                                </div>
-                                <TextInput
-                                    id="email"
-                                    type="email"
-                                    name="email"
-                                    value={data.email}
-                                    className="mt-1 block w-full h-[53px] border-2   text-[14px]"
-                                    autoComplete="username"
-                                    placeholder="Email"
-                                    isFocused={true}
-                                    onChange={(e) =>
-                                        setData("email", e.target.value)
-                                    }
-                                />
-                            </div>
+                            <TextInput
+                                id="email"
+                                type="email"
+                                name="email"
+                                value={data.email}
+                                autoComplete="username"
+                                icon={emailIcon}
+                                placeholder="Email"
+                                isFocused={true}
+                                onChange={(e) =>
+                                    setData("email", e.target.value)
+                                }
+                            />
+
                             <InputError
                                 message={errors.email}
                                 className="mt-2"
@@ -164,14 +160,8 @@ export default function Login({ status }) {
                     {/* Children Login end*/}
                 </section>
 
-                <section className="bg-[#E2B933]  rounded-[25px]">
-                    <img
-                        src={loginImg}
-                        alt=""
-                        width={500}
-                        height={500}
-                        className="px-[50px] p-[78px]"
-                    />
+                <section className="bg-[#E2B933] w-[600px] h-[657px] rounded-[25px] flex justify-center items-center">
+                    <img src={loginImg} alt="" width={500} height={500} />
                 </section>
             </div>
 
