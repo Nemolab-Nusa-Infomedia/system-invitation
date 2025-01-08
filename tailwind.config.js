@@ -19,6 +19,9 @@ export default {
                 "help-section":
                     "url('/public/asset-landing-page/bg-bantuan.png')",
             },
+            width: {
+                calc_4: "calc(100% / 4)",
+            },
         },
     },
 
