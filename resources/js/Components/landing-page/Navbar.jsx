@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "/public/asset-landing-page/hugo-logo.png";
+import logo from "/public/asset-landing-page/logo.png";
 import { menuItems } from "@/lib";
 import Button from "./Button";
 

@@ -23,18 +23,22 @@ function Footer() {
                             <a
                                 className="poppins font-semibold text-base leading-6 "
                                 href={`${items.href}`}
+                                key={items.label}
                             >
                                 <p>{items.label}</p>
                             </a>
                         ))}
                     </div>
-                    {footer_kontak.map((items) => (
-                        <div className="w-[348px] flex flex-col gap-1 text-white">
+                    {footer_kontak.map((items, index) => (
+                        <div
+                            className="w-[348px] flex flex-col gap-1 text-white"
+                            key={index}
+                        >
                             <h1 className="poppins font-semibold text-lg leading-7 mb-1">
                                 {items.title}
                             </h1>
                             {items.info.map((info) => (
-                                <span className="flex gap-2">
+                                <span className="flex gap-2" key={info.text}>
                                     <img
                                         src={`${info.image}`}
                                         alt={info.text}

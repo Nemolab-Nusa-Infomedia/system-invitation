@@ -4,6 +4,7 @@ import Keunggulan from "./landing-page/Keunggulan";
 import Bantuan from "./landing-page/Bantuan";
 import FiturPaket from "./landing-page/FiturPaket";
 import Footer from "@/Components/landing-page/Footer";
+import Template from "./landing-page/Template";
 
 export default function Index() {
     return (
@@ -13,6 +14,7 @@ export default function Index() {
             <Keunggulan />
             <Bantuan />
             <FiturPaket />
+            <Template />
             <Footer />
         </main>
     );
