@@ -85,3 +85,23 @@ export const paket_spesial = [
         ],
     },
 ];
+
+export const footer_kontak = [
+    {
+        title: "Kontak Kami",
+        info: [
+            {
+                image: "/asset-landing-page/envelope.svg",
+                text: "info@hugostudio.id",
+            },
+            {
+                image: "/asset-landing-page/phone.svg",
+                text: "0851-8303-8794",
+            },
+            {
+                image: "/asset-landing-page/location.svg",
+                text: "Dusun Pandak, Kec. Baturaden, Kabupaten Banyumas, Jawa Tengah",
+            },
+        ],
+    },
+];
