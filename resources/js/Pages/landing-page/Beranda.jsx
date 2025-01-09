@@ -23,7 +23,9 @@ function Beranda() {
                             image={cart}
                             text_class={"text-white"}
                             text={"Pesan Sekarang"}
-                            button_class={"py-3 px-5 bg-[#FF61A2]"}
+                            button_class={
+                                "py-3 px-5 bg-[#FF61A2] transition-all hover:bg-[#a31543]"
+                            }
                             link={"/"}
                         />
                     </div>

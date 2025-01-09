@@ -22,6 +22,7 @@ export default {
             width: {
                 calc_4: "calc(100% / 4)",
                 calc_3: "calc(100% / 3)",
+                calc_2: "calc(100% / 2)",
             },
         },
     },

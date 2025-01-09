@@ -67,7 +67,7 @@ function Navbar() {
             <Button
                 text={"Coba Template Gratis"}
                 link={"/"}
-                button_class="border-2 border-[#FF61A2] py-2 px-6 bg-[#FF61A2] text-[#ffffff] transition-all hover:bg-[#ffffff] hover:text-[#FF61A2]"
+                button_class="p-4 bg-[#FF61A2] text-[#ffffff] transition-all hover:bg-[#a31543]"
                 text_class="font-poppins font-medium text-base"
             />
         </nav>
