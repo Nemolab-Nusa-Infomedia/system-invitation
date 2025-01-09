@@ -129,3 +129,30 @@ export const NAV_TEMPLATE = [
     { key: "pernikahan", label: "Pernikahan" },
     { key: "khitan", label: "Khitan" },
 ];
+
+export const dumyBlogPosts = [
+    {
+        image: "/asset-landing-page/image.jpg",
+        title: "Keuntungan Memilih Undangan Digital untuk Pernikahan Anda",
+        description:
+            "Undangan pernikahan digital memberikan banyak keuntungan yang tidak dimiliki oleh undangan fisik tradisional...",
+        date: "2 Agustus 2024",
+        category: "Umum",
+    },
+    {
+        image: "/asset-landing-page/image.jpg",
+        title: "Desain Undangan Digital Pernikahan yang Memikat",
+        description:
+            "Undangan pernikahan digital memberikan banyak keuntungan yang tidak dimiliki oleh undangan fisik tradisional...",
+        date: "2 Agustus 2024",
+        category: "Umum",
+    },
+    {
+        image: "/asset-landing-page/image.jpg",
+        title: "Undangan Pernikahan Bertema Minimalis",
+        description:
+            "Tema minimalis dalam undangan pernikahan semakin digemari karena kesan elegan dan sederhana yang dimiliki...",
+        date: "2 Agustus 2024",
+        category: "Umum",
+    },
+];
