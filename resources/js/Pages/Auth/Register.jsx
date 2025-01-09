@@ -50,7 +50,7 @@ export default function Register() {
     const togglePasswordVisibility = (field) => {
         if (field === "password") {
             setPasswordVisible(!passwordVisible);
-        } else if (field === "confirmPassword") {
+        } else if (field === "password_confirmation") {
             setConfirmPasswordVisible(!confirmPasswordVisible);
         }
     };
@@ -145,7 +145,7 @@ export default function Register() {
                                 {["password", "password_confirmation"].map(
                                     (field, index) => (
                                         <div
-                                            className="relative flex w-full border"
+                                            className="relative flex w-full "
                                             key={index}
                                         >
                                             <input
