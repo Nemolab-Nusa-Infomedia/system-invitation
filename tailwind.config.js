@@ -24,6 +24,14 @@ export default {
                 calc_3: "calc(100% / 3)",
                 calc_2: "calc(100% / 2)",
             },
+            keyframes: {
+                upDown: {
+                    "50%": { transform: "translateY(20px)" },
+                },
+            },
+            animation: {
+                upDown: "upDown 2s ease-in-out infinite",
+            },
         },
     },
 

@@ -9,29 +9,39 @@ function Navbar() {
     // Update hash aktif saat hash berubah atau saat scroll
     useEffect(() => {
         const handleHashChange = () => {
-            setActiveHash(window.location.hash || "#beranda"); // Default ke #beranda jika hash kosong
+            const currentPath = window.location.pathname;
+            const currentHash = window.location.hash;
+
+            // Periksa hash atau path aktif
+            const activeMenu = menuItems.find((menu) =>
+                menu.href.startsWith("#")
+                    ? currentHash === menu.href
+                    : currentPath.includes(menu.href)
+            );
+
+            setActiveHash(activeMenu ? activeMenu.href : "#beranda"); // Default ke #beranda
         };
 
         const handleScroll = () => {
             menuItems.forEach((menu) => {
-                const element = document.querySelector(menu.href);
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    if (
-                        rect.top <= window.innerHeight / 2 &&
-                        rect.bottom >= window.innerHeight / 2
-                    ) {
-                        setActiveHash(menu.href);
+                if (menu.href.startsWith("#")) {
+                    const element = document.querySelector(menu.href);
+                    if (element) {
+                        const rect = element.getBoundingClientRect();
+                        if (
+                            rect.top <= window.innerHeight / 2 &&
+                            rect.bottom >= window.innerHeight / 2
+                        ) {
+                            setActiveHash(menu.href);
+                        }
                     }
                 }
             });
         };
 
-        // Tambahkan event listener untuk perubahan hash dan scroll
         window.addEventListener("hashchange", handleHashChange);
         window.addEventListener("scroll", handleScroll);
 
-        // Panggil sekali saat komponen pertama kali dimuat
         handleHashChange();
         handleScroll();
 
@@ -43,15 +53,15 @@ function Navbar() {
 
     return (
         <nav className="max-h-[126px] flex justify-between w-full items-center py-5 px-[110px] fixed bg-white shadow-md z-50">
-            <div>
+            <a href="/">
                 <img src={logo} alt="logo" className="w-[180px]" />
-            </div>
+            </a>
             <div className="flex gap-[22px] justify-center items-center">
                 {menuItems.map((menu) => (
                     <a
                         key={menu.href}
-                        href={menu.href}
-                        className={`relative font-poppins font-bold  text-xl pb-1 text-black transition-all
+                        href={`/${menu.href}`}
+                        className={`relative font-poppins font-bold  text-xl pb-1 transition-all
                             ${
                                 activeHash === menu.href
                                     ? "text-[#FF61A2] after:w-full"
@@ -66,7 +76,7 @@ function Navbar() {
             </div>
             <Button
                 text={"Coba Template Gratis"}
-                link={"/"}
+                link={"/login"}
                 button_class="p-4 bg-[#FF61A2] text-[#ffffff] transition-all hover:bg-[#a31543]"
                 text_class="font-poppins font-medium text-base"
             />
