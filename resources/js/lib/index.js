@@ -106,6 +106,24 @@ export const footer_kontak = [
     },
 ];
 
+export const menuItemsDashboard = [
+    {
+        href: "dashboard",
+        label: "Home",
+        id: "dashboard",
+    },
+    {
+        href: "orders",
+        label: "Pesanan Saya",
+        id: "orders",
+    },
+    {
+        href: "help",
+        label: "Bantuan",
+        id: "help",
+    },
+];
+
 export const NAV_TEMPLATE = [
     { key: "semua", label: "Semua" },
     { key: "pernikahan", label: "Pernikahan" },

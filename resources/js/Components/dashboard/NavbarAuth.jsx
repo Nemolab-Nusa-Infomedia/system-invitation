@@ -1,7 +1,7 @@
 import { Link } from "@inertiajs/react";
 export default function NavbarAuth({ router }) {
     return (
-        <nav className="bg-white shadow-md min-h-[87px] px-[9rem]  items-center flex ">
+        <nav className="bg-white shadow-md min-h-[87px] px-[8.7rem]  items-center flex ">
             <div className="w-full flex flex-wrap items-center justify-between mx-auto   ">
                 <a
                     href="https://flowbite.com/"

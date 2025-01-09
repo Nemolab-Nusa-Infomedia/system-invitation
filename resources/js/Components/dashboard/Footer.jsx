@@ -5,7 +5,7 @@ import instagramImg from "/public/assets-dashboard/instagram.png";
 import twitterImg from "/public/assets-dashboard/twitter.png";
 export default function Footer() {
     return (
-        <footer className="w-full bg-[#8B4513] px-[6.875rem] flex flex-col gap-y-[20px] text-white">
+        <footer className="w-full bg-[#8B4513] mt-20 px-[6.875rem] flex flex-col gap-y-[20px] text-white">
             <div className="flex justify-between mt-[20px] ">
                 <ul className="navigasi text-[20px]  flex  items-center">
                     <Link href="" className="p-[10px] pl-0 font-bold">
