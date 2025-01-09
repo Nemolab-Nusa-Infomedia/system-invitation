@@ -26,7 +26,10 @@ function Template() {
                     </p>
                     <div className="mt-6 flex gap-[10px]">
                         {NAV_TEMPLATE.map((item) => (
-                            <div onClick={() => handleNavClick(item.key)}>
+                            <div
+                                onClick={() => handleNavClick(item.key)}
+                                key={item.label}
+                            >
                                 <Button
                                     text={item.label}
                                     button_class={`p-4 text-[#ffffff] transition-all hover:bg-[#a31543]  ${
