@@ -24,7 +24,7 @@ function Footer() {
                             {menuItems.map((items) => (
                                 <a
                                     className="poppins font-semibold text-base leading-6 "
-                                    href={`${items.href}`}
+                                    href={`/${items.href}`}
                                     key={items.label}
                                 >
                                     <p>{items.label}</p>
@@ -54,7 +54,7 @@ function Footer() {
                                 ))}
                             </div>
                         ))}
-                        <a href="#beranda">
+                        <a href="#" className="animate-upDown">
                             <div className="bg-white flex justify-center items-center rounded-full w-[60px] h-[60px]">
                                 <img src={arrow_top} alt="arrow" />
                             </div>

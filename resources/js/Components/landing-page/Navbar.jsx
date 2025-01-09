@@ -53,9 +53,9 @@ function Navbar() {
 
     return (
         <nav className="max-h-[126px] flex justify-between w-full items-center py-5 px-[110px] fixed bg-white shadow-md z-50">
-            <div>
+            <a href="/">
                 <img src={logo} alt="logo" className="w-[180px]" />
-            </div>
+            </a>
             <div className="flex gap-[22px] justify-center items-center">
                 {menuItems.map((menu) => (
                     <a
