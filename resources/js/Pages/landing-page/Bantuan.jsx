@@ -11,12 +11,12 @@ import mockup_phone from "/public/asset-landing-page/mockup-mobile.png";
 function Bantuan() {
     return (
         <section
-            className="flex relative justify-center bg-[#FFF5E1] w-full"
+            className="flex relative justify-center bg-[#FF6FAA] w-full  sm:scroll-mt-32"
             id="bantuan"
         >
-            <div className="absolute inset-0 bg-help-section bg-cover bg-center opacity-10" />
+            <div className="absolute inset-0 bg-help-section opacity-10" />
             <div className="max-w-[1440px] w-full h-[713px] px-[93px] py-[60px] z-10">
-                <div className="text-center">
+                <div className="text-center text-white">
                     <h1 className="font-poppins font-bold text-3xl leading-[43.5px]">
                         Langkah Mudah Memesan Undangan
                     </h1>
@@ -29,6 +29,7 @@ function Bantuan() {
                     <div className="w-1/3 h-[411px] flex flex-col justify-around">
                         <Card
                             image={user_add}
+                            class_card="flex-row-reverse text-end"
                             alt="user create"
                             title="Buat Akun"
                             description="Anda dapat membuat akun pribadi atau akun perusahaan"
@@ -36,17 +37,19 @@ function Bantuan() {
                         <Card
                             image={email_search}
                             alt="search"
+                            class_card="flex-row-reverse text-end"
                             title="Temukan Acaranya"
                             description="Cari acara yang ingin Anda buat undangannya."
                         />
                         <Card
                             image={dekstop_edit}
                             alt="template"
+                            class_card="flex-row-reverse text-end"
                             title="Pilih template desain"
                             description="Pilih dari berbagai template yang tersedia."
                         />
                     </div>
-                    <div className="w-1/3 h-[411px]">
+                    <div className="w-[300px]">
                         <img
                             src={mockup_phone}
                             alt="mockup phone"

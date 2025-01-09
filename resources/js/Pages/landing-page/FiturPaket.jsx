@@ -1,26 +1,25 @@
 import React from "react";
 import PaketCard from "@/Components/landing-page/PaketCard";
-import { paket_gratis, paket_kece, paket_santai, paket_spesial } from "@/lib";
 
 function FiturPaket() {
     return (
         <section className="flex relative justify-center w-full">
-            <div className="max-w-[1440px] w-full px-[84px] py-[80px]">
-                <div className="text-center">
-                    <h1 className="font-poppins font-bold text-[29px] leading-[43.5px]">
-                        Semua Paket, Semua Fitur: Pilih Sesuai Kebutuhan Anda!
+            <div className="max-w-[1440px] w-full px-[90px] pt-[97px]">
+                <div className="text-start w-[940px]">
+                    <h1 className="font-poppins font-bold text-[32px] leading-[48px]">
+                        Temukan Paket Terbaik untuk Anda Sesuaikan dengan
+                        Kebutuhan Nikmati Semua Fitur
                     </h1>
-                    <p className="font-poppins font-medium text-[19px] leading-[28.5px]">
-                        Mudah dan Terjangkau: Pelayanan Ramah, Respon Cepat, dan
-                        Desain Undangan Tanpa Repot!
+                    <p className="font-poppins text-[18px] leading-[27px] mt-2">
+                        Dapatkan semua fitur terbaik yang kami tawarkan,
+                        disesuaikan dengan preferensi dan tujuan Anda.
                     </p>
                 </div>
-                <div className="flex justify-around items-center mt-8 w-full gap-6 ">
-                    {/* card start */}
-                    <PaketCard paket={paket_gratis} />
-                    <PaketCard paket={paket_santai} />
-                    <PaketCard paket={paket_kece} />
-                    <PaketCard paket={paket_spesial} />
+                <div className="grid grid-cols-4 justify-around items-center mt-8 w-full gap-5 ">
+                    <PaketCard />
+                    <PaketCard />
+                    <PaketCard />
+                    <PaketCard />
                 </div>
             </div>
         </section>

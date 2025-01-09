@@ -1,53 +1,70 @@
 import React from "react";
-import maps from "/public/asset-landing-page/maps.svg";
 import Button from "@/Components/landing-page/Button";
+import cart from "/public/asset-landing-page/cart.svg";
+import ceklist from "/public/asset-landing-page/ceklist.svg";
+import cross from "/public/asset-landing-page/cross.svg";
 
-function PaketCard({ paket }) {
+function PaketCard() {
     return (
         <>
-            {paket.map((item, index) => (
-                <div
-                    key={index}
-                    className="card max-w-[300px] w-calc_4 rounded-2xl border flex flex-col gap-3 border-black py-[22px] px-5"
-                >
-                    {/* Header */}
-                    <div className="text-start border-b border-black pb-2">
-                        <h2 className="font-poppins font-bold text-base leading-6 text-[#B10051]">
-                            {item.title}
-                        </h2>
-                        <p className="font-poppins font-medium text-xs leading-[18px]">
-                            {item.description}
-                        </p>
-                    </div>
-
-                    {/* Features */}
-                    <div className="flex flex-col gap-2">
-                        {item.features.map((feature, featureIndex) => (
-                            <span
-                                key={featureIndex}
-                                className="flex gap-[5px] items-center"
-                            >
-                                <img
-                                    src={maps}
-                                    alt="maps"
-                                    className="h-6 w-6"
-                                />
-                                <p className="font-poppins font-medium text-xs leading-[18px]">
-                                    {feature}
-                                </p>
-                            </span>
-                        ))}
-                    </div>
-
-                    {/* Button */}
-                    <Button
-                        text="Pilih Paket"
-                        link=""
-                        button_class="bg-[#C20059] w-full justify-center py-[11px] px-4"
-                        text_class="text-white font-poppins text-base font-medium"
-                    />
+            <div className="card bg-[#FFEFF6] max-w-[300px] rounded-2xl  flex flex-col gap-[14px] py-[18px] px-5">
+                {/* Header */}
+                <div className="font-poppins flex flex-col gap-[14px]">
+                    <h2 className="font-bold text-xl leading-[30px]">
+                        Paket Cuma-cuma
+                    </h2>
+                    <h1 className="font-bold text-[28px] leading-[42px]">
+                        Rp 0/
+                        <span className="text-sm font-normal leading-[21px] ">
+                            3hari
+                        </span>
+                    </h1>
+                    <p className="font-medium text-xs leading-[18px]">
+                        Gratis, tapi tetap keren!
+                    </p>
                 </div>
-            ))}
+
+                {/* Button */}
+                <Button
+                    image={cart}
+                    text_class={"text-white font-poppins font-bold leading-6 "}
+                    text={"Piliih Paket"}
+                    button_class={
+                        "bg-[#C20059] w-full justify-center gap-[10px] py-[13px] px-4 bg-[#FF61A2] transition-all hover:bg-[#a31543]"
+                    }
+                    link={"/"}
+                />
+
+                <div className="flex flex-col gap-[10px]">
+                    <h3 className="font-poppins font-semibold text-sm leading-[21px]">
+                        Fitur Utama Paket Cuma - Cuma
+                    </h3>
+                    <div className="font-poppins flex flex-col gap-[6px]">
+                        <span className="flex gap-1 items-center">
+                            <img
+                                src={ceklist}
+                                alt="ceklist"
+                                className="h-5 w-5"
+                            />
+
+                            <p className="font-semibold leading-[18px] text-xs">
+                                Tamu Undangan
+                            </p>
+                        </span>
+                        <span className="flex gap-1 items-center">
+                            <img
+                                src={cross}
+                                alt="ceklist"
+                                className="h-5 w-5"
+                            />
+
+                            <p className="font-semibold leading-[18px] text-xs">
+                                Tidak Ada Fitur Custom
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }

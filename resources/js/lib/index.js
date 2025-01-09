@@ -105,3 +105,9 @@ export const footer_kontak = [
         ],
     },
 ];
+
+export const NAV_TEMPLATE = [
+    { key: "semua", label: "Semua" },
+    { key: "pernikahan", label: "Pernikahan" },
+    { key: "khitan", label: "Khitan" },
+];

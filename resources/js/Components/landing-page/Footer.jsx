@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "/public/asset-landing-page/loremipsum_logo.png";
+import logo from "/public/asset-landing-page/logo-white.svg";
+import arrow_top from "/public/asset-landing-page/arrow-top.svg";
 import { footer_kontak, menuItems } from "@/lib";
 
 function Footer() {
@@ -7,48 +8,58 @@ function Footer() {
         <section className="flex justify-center w-full py-[30px] px-[110px] bg-[#60002C]">
             <div className="max-w-[1440px] w-full flex flex-col">
                 <div className="flex justify-between">
-                    <div className="max-w-[316px] flex flex-col gap-[10px]">
-                        <img src={logo} alt="logo" className="w-[100px]" />
-                        <p className="font-poppins font-medium leading-[18px] text-xs text-white">
+                    <div className="w-1/2 flex flex-col gap-[10px]">
+                        <img src={logo} alt="logo" className="w-[183px]" />
+                        <p className="font-poppins font-medium leading-[18px] max-w-[316px] text-xs text-white">
                             Hadirkan inovasi dalam cara Anda mengundang.
                             platform kreatif untuk membuat undangan digital yang
                             memukau!
                         </p>
                     </div>
-                    <div className="text-white">
-                        <h1 className="poppins font-semibold text-lg leading-7 mb-1">
-                            Navigasi
-                        </h1>
-                        {menuItems.map((items) => (
-                            <a
-                                className="poppins font-semibold text-base leading-6 "
-                                href={`${items.href}`}
-                                key={items.label}
-                            >
-                                <p>{items.label}</p>
-                            </a>
-                        ))}
-                    </div>
-                    {footer_kontak.map((items, index) => (
-                        <div
-                            className="w-[348px] flex flex-col gap-1 text-white"
-                            key={index}
-                        >
+                    <div className="flex w-1/2 justify-between">
+                        <div className="text-white">
                             <h1 className="poppins font-semibold text-lg leading-7 mb-1">
-                                {items.title}
+                                Navigasi
                             </h1>
-                            {items.info.map((info) => (
-                                <span className="flex gap-2" key={info.text}>
-                                    <img
-                                        src={`${info.image}`}
-                                        alt={info.text}
-                                        className="h-[21px] w-[21px] mt-[2px]"
-                                    />
-                                    <p>{info.text}</p>
-                                </span>
+                            {menuItems.map((items) => (
+                                <a
+                                    className="poppins font-semibold text-base leading-6 "
+                                    href={`${items.href}`}
+                                    key={items.label}
+                                >
+                                    <p>{items.label}</p>
+                                </a>
                             ))}
                         </div>
-                    ))}
+                        {footer_kontak.map((items, index) => (
+                            <div
+                                className="w-[348px] flex flex-col gap-1 text-white"
+                                key={index}
+                            >
+                                <h1 className="poppins font-semibold text-lg leading-7 mb-1">
+                                    {items.title}
+                                </h1>
+                                {items.info.map((info) => (
+                                    <span
+                                        className="flex gap-2"
+                                        key={info.text}
+                                    >
+                                        <img
+                                            src={`${info.image}`}
+                                            alt={info.text}
+                                            className="h-[21px] w-[21px] mt-[2px]"
+                                        />
+                                        <p>{info.text}</p>
+                                    </span>
+                                ))}
+                            </div>
+                        ))}
+                        <a href="#beranda">
+                            <div className="bg-white flex justify-center items-center rounded-full w-[60px] h-[60px]">
+                                <img src={arrow_top} alt="arrow" />
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div className="h-[1px] w-full mt-5 bg-white" />
                 <div className="flex items-center justify-between w-full mt-6">
