@@ -256,7 +256,7 @@ export default function Register() {
                         {/* Tombol untuk mengirim form */}
                         <div className="mt-0 flex items-center justify-end">
                             <PrimaryButton
-                                className="w-full h-[52px] flex justify-center text-[20px] rounded-[12px]"
+                                className="w-full h-[52px] font-semibold  flex justify-center text-[20px] rounded-[12px]"
                                 disabled={processing} // Menonaktifkan tombol saat proses pengiriman
                             >
                                 Daftar

@@ -26,8 +26,8 @@ export default function AuthenticatedLayout({ header, children }) {
     }, [getUrlNavbar]);
 
     return (
-        <div className="min-h-screen bg-gray-100 font-poppins">
-            <nav className=" shadow-md bg-white h-[96px] px-[110px]">
+        <div className="min-h-screen bg-white font-poppins">
+            <nav className=" shadow-md bg-white h-[96px] px-[8.7rem]">
                 <div className="mx-auto  h-full">
                     <div className="flex  justify-between items-center h-[96px]">
                         <div className="flex ">
@@ -193,7 +193,9 @@ export default function AuthenticatedLayout({ header, children }) {
                 </header>
             )}
 
-            <main className="px-[110px] mt-[69px]">{children}</main>
+            <main className="w-[1222px] mt-[69px] bg-white mx-auto ">
+                {children}
+            </main>
             <Footer />
         </div>
     );
