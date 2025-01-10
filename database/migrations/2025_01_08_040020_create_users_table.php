@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();   
             $table->string('name'); 
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('role');
             $table->string('phone_number');
             $table->string('password');
-            $table->string('company')->nullable(); // Nama perusahaan (opsional)
+            $table->string('company')->nullable(); 
             $table->unsignedBigInteger('packet_id')->nullable();
             $table->rememberToken(); // Token untuk "Ingat Saya"
             $table->timestamps(); // Timestamps untuk created_at dan updated_at
