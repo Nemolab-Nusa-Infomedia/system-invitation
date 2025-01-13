@@ -23,7 +23,7 @@ export default function AuthenticatedLayout({ header, children }) {
 
             <div className="  w-[1050px]">
                 <div className="relative h-[96px]">
-                    <nav className=" shadow-md fixed w-[1050px] bg-white h-[96px] px-10 rounded-[12px]">
+                    <nav className=" shadow-md  w-[972px] bg-white h-[96px] px-50 rounded-[12px] gap-[138px] pl-[50px]  ">
                         <div className="mx-auto  h-full">
                             <div className="flex   items-center h-[96px]  justify-end">
                                 <div className="hidden sm:ms-6 sm:flex sm:items-center  ">

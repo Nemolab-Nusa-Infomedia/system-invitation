@@ -28,7 +28,7 @@ const Sidebar = () => {
                 onClick={toggleSidebar}
             ></div>
             <div
-                className={`fixed  md:w-[366px] w-64 sm:w-64 h-[780px] md:rounded-[12px] bg-white shadow-lg transition-transform transform ${
+                className={`fixed  md:w-[36,6px] w-64 sm:w-64 h-[780px] md:rounded-[12px] bg-white shadow-lg transition-transform transform ${
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 } md:translate-x-0`}
             >
