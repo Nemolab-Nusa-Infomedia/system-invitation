@@ -29,8 +29,12 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/dashboard/weeding/edit', function () {
-    return Inertia::render('Dashboard/WeddingInvitation');
+Route::get('/dashboard/wedding/edit', function () {
+    return Inertia::render('Dashboard/Edit/WeddingInvitation');
+});
+
+Route::get('/dashboard/wedding/edit/content', function () {
+    return Inertia::render('Template/Wedding/Content/WeddingV1');
 });
 
 Route::get('/dashboard/khitan/edit', function () {
