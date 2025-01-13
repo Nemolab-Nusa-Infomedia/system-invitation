@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\invitation;
+
+use App\Http\Controllers\Controller;
 
 use App\Models\Invitation\Event;
 use Illuminate\Http\Request;

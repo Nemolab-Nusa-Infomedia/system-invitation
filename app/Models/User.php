@@ -3,9 +3,14 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Models\invitation\Event;
+use App\Models\invitation\Payment;
+use App\Models\invitation\Testimonial;
+use Illuminate\Notifications\Notifiable;
+use App\Models\invitation\PacketInvitation;
+use App\Models\invitation\InvitationCreated;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
