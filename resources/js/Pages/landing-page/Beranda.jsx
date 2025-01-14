@@ -9,7 +9,7 @@ function Beranda() {
         <section className="flex justify-center bg-white w-full" id="beranda">
             <div className="max-w-[1440px] flex flex-col lg:flex-row lg:pl-[44px] pt-32  lg:pt-[70px] xl:pt-[0px] xl:pl-[90px] justify-between items-center ">
                 <div className="flex lg:w-[654px] flex-col justify-center gap-[21px] h-fit p-5 lg:p-0">
-                    <div className="flex flex-col gap-[21px] sm:w-[263px] lg:w-full">
+                    <div className="flex flex-col gap-[21px] w-full">
                         <h1 className="font-bold text-[27px] leading-10 lg:text-[32px] lg:leading-[48px] xl:text-[50px] xl:leading-[75px] font-poppins ">
                             Rayakan Momen Spesial dengan Undangan Digital yang
                             Berkesan.
@@ -31,7 +31,7 @@ function Beranda() {
                         />
                     </div>
                 </div>
-                <div className="hidden lg:relative">
+                <div className="hidden lg:block">
                     <img
                         src={banner}
                         className="h-auto lg:w-[500px] xl:w-[695px]"
