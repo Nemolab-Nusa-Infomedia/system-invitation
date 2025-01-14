@@ -30,11 +30,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard/wedding/edit', function () {
-    return Inertia::render('Dashboard/Edit/WeddingInvitation');
+    return Inertia::render('Invitation/Invitation');
 });
 
 Route::get('/dashboard/wedding/edit/content', function () {
-    return Inertia::render('Template/Wedding/Content/WeddingV1');
+    return Inertia::render('Invitation/Template/Wedding/Content/WeddingV1');
 });
 
 Route::get('/dashboard/khitan/edit', function () {

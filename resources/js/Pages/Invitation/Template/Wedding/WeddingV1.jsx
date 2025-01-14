@@ -3,8 +3,8 @@ import "../css/main.css";
 
 function WeddingV1() {
     return (
-        <body className="">
-            <div className="lg:w-1/3  mx-auto ">
+        <div className="">
+            <div className="lg:w-1/3  mx-auto">
                 <div className="cover items-center justify-center flex ">
                     <img
                         src="/invitation-asset/undangan-v1/item-1.png"
@@ -47,7 +47,7 @@ function WeddingV1() {
                         alt=""
                     />
 
-                    <div className="flex flex-col items-center cover-content text-center p-3 animate-fadeInUp">
+                    <div className="flex flex-col items-center cover-content text-center p-3 animate-fadeInUp border">
                         <img
                             src="/invitation-asset/undangan-v1/gunungan.png"
                             className="mb-4"
@@ -79,7 +79,7 @@ function WeddingV1() {
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     );
 }
 

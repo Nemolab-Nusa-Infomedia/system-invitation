@@ -22,13 +22,13 @@ const Sidebar = () => {
     return (
         <div className="flex md:fixed ">
             <div
-                className={`fixed inset-0 bg-gray-800 bg-opacity-75 transition-opacity  md:hidden ${
+                className={`fixed inset-0 bg-gray-800  bg-opacity-75 transition-opacity  md:hidden ${
                     isOpen ? "block" : "hidden"
                 }`}
                 onClick={toggleSidebar}
             ></div>
             <div
-                className={`fixed  md:w-[36,6px] w-64 sm:w-64 h-[780px] md:rounded-[12px] bg-white shadow-lg transition-transform transform ${
+                className={`fixed  md:w-[366px] w-64 sm:w-64 h-screen md:rounded-[12px] bg-white shadow-lg transition-transform transform ${
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 } md:translate-x-0`}
             >
