@@ -34,11 +34,7 @@ Route::get('/dashboard/wedding/edit', function () {
 });
 
 Route::get('/dashboard/wedding/edit/content', function () {
-    return Inertia::render('Invitation/Template/Wedding/Content/WeddingV1');
-});
-
-Route::get('/dashboard/khitan/edit', function () {
-    return Inertia::render('Dashboard/KhitanInvitation');
+    return Inertia::render('Invitation/Template/Khitan/Content/KhitanV1');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
