@@ -6,7 +6,7 @@ import Menu from "./Menu";
 
 function Navbar() {
     const [activeHash, setActiveHash] = useState("");
-    const [clickNav, setClickNav] = useState(false);
+    const [clickNav, setClickNav] = useState(true);
 
     const handleNavClcik = () => {
         setClickNav(!clickNav);
@@ -64,15 +64,15 @@ function Navbar() {
                     <img
                         src={logo}
                         alt="logo"
-                        className="w-[143px] lg:w-[180px]"
+                        className="w-[143px] lg:w-[153px] xl:w-[183px]"
                     />
                 </a>
-                <div className=" gap-[22px] justify-center hidden lg:flex items-center">
+                <div className="gap-[16px] xl:gap-[22px] justify-center hidden lg:flex items-center">
                     {menuItems.map((menu) => (
                         <a
                             key={menu.href}
                             href={`/${menu.href}`}
-                            className={`relative font-poppins font-bold text-base lg:text-xl pb-1 transition-all
+                            className={`relative font-poppins lg:font-medium xl:font-bold text-base lg:text-xl pb-1 transition-all
                             ${
                                 activeHash === menu.href
                                     ? "text-[#FF61A2] after:w-full"
@@ -89,7 +89,7 @@ function Navbar() {
                     text={"Coba Template Gratis"}
                     link={"/login"}
                     button_class="p-4 bg-[#FF61A2] text-[#ffffff] transition-all hover:bg-[#a31543] hidden lg:block"
-                    text_class="font-poppins font-medium text-base"
+                    text_class="font-poppins font-medium text-[14px] xl:text-base"
                 />
                 {clickNav ? (
                     <img
