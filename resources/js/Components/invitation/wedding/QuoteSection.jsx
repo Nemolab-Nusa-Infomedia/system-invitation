@@ -1,7 +1,7 @@
 import Modal from "@/Components/invitation/Modal";
 import { useState } from "react";
 
-const QuoteSection = ({ title, quote, reference }) => {
+const QuoteSection = ({ title, quote, reference, form }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     const handleOpenModal = () => setModalOpen(true);
@@ -36,7 +36,7 @@ const QuoteSection = ({ title, quote, reference }) => {
                 <p>{reference}</p>
             </div>
             <Modal show={isModalOpen} onClose={handleCloseModal}>
-                <div className="text-black">Hello</div>
+                {form}
             </Modal>
         </div>
     );

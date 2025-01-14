@@ -4,6 +4,7 @@ import QuoteSection from "@/Components/invitation/wedding/QuoteSection";
 import MempelaiSection from "@/Components/invitation/wedding/MempelaiSection";
 import EventSection from "@/Components/invitation/wedding/EventSection";
 import DoaSection from "@/Components/invitation/wedding/DoaSection";
+import FormDoa from "@/Pages/Invitation/Form_Section/Wedding/FormDoa";
 
 function ContentWeddingV1() {
     const groom = {
@@ -74,6 +75,7 @@ function ContentWeddingV1() {
                         title="Rama & Shinta"
                         quote="Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
                         reference="(Ar-Rum: 21)"
+                        form={<FormDoa />}
                     />
                 </div>
             </div>

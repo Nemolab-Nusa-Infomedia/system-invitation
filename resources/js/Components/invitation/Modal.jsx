@@ -30,17 +30,17 @@ const Modal = ({ show, onClose, children }) => {
         >
             <div className="bg-gray-900/75 lg:w-1/3 fixed h-screen top-0"></div>
             <div
-                className="modal-content w-full h-64 bg-white"
+                className="modal-content w-full h-80 bg-white"
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className="flex flex-col py-2">
                     <button
-                        className="close-button self-end mr-5  "
+                        className="close-button self-end mr-5 text-black  "
                         onClick={onClose}
                     >
                         X
                     </button>
-                    {children}
+                    <div className="px-4 py-10">{children}</div>
                 </div>
             </div>
         </div>
