@@ -29,12 +29,12 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/dashboard/weeding/edit', function () {
-    return Inertia::render('Dashboard/WeddingInvitation');
+Route::get('/dashboard/wedding/edit', function () {
+    return Inertia::render('Invitation/Invitation');
 });
 
-Route::get('/dashboard/khitan/edit', function () {
-    return Inertia::render('Dashboard/KhitanInvitation');
+Route::get('/dashboard/wedding/edit/content', function () {
+    return Inertia::render('Invitation/Template/Khitan/Content/KhitanV1');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {

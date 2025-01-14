@@ -11,7 +11,7 @@ import PrimaryButton from "@/Components/dashboard/PrimaryButton";
 function Orders() {
     return (
         <AuthenticatedLayout>
-            <main className=" flex flex-col gap-[34px] mb-[265px]   w-full">
+            <main className=" flex flex-col gap-[34px]  w-full">
                 <div className="flex justify-between items-center">
                     {/* action */}
                     <div className="action">
@@ -23,10 +23,10 @@ function Orders() {
                                 <img
                                     src={cartIcon}
                                     alt="cart"
-                                    width={40}
-                                    height={40}
+                                    width={30}
+                                    height={30}
                                 />
-                                <span className="text-[31px] font-[600]">
+                                <span className="text-xl font-[600]">
                                     Pesanan Saya
                                 </span>
                             </Link>
@@ -37,10 +37,10 @@ function Orders() {
                                 <img
                                     src={clockIcon}
                                     alt="cart"
-                                    width={40}
-                                    height={40}
+                                    width={30}
+                                    height={30}
                                 />
-                                <span className="text-[31px] font-[600]">
+                                <span className="text-xl font-[600]">
                                     History Pesanan
                                 </span>
                             </Link>
@@ -87,15 +87,16 @@ function Orders() {
                 </div>
 
                 {/* Cards */}
-                <section className="cards flex flex-wrap justify-between ">
-                    <figure className="border-[3px] border-[#763201] rounded-[24px] w-fit p-[20px] gap-[24px] flex flex-col ">
-                        <img
-                            src={thumbnail}
-                            alt=""
-                            width={354}
-                            height={226}
-                            className="border rounded-[20px] overflow-hidden"
-                        />
+                <section className="cards flex flex-wrap  gap-10 px-10">
+                    <figure className="border-[3px] border-[#763201] rounded-[24px] w-fit p-[20px] gap-[24px] flex flex-col   max-w-[30rem] ">
+                        <div className="">
+                            <img
+                                src={thumbnail}
+                                alt=""
+                                height={126}
+                                className="border rounded-[20px] w-full overflow-hidden"
+                            />
+                        </div>
 
                         <figcaption className=" flex flex-col gap-[4px]">
                             <div className="badge bg-[#FAC418] rounded-[36px] text-[12px] font-[600] w-fit text-white leading-[16px] py-[5px] px-[15px]">
@@ -112,14 +113,15 @@ function Orders() {
                             Detail
                         </PrimaryButton>
                     </figure>
-                    <figure className="border-[3px] border-[#763201] rounded-[24px] w-fit p-[20px] gap-[24px] flex flex-col ">
-                        <img
-                            src={thumbnail}
-                            alt=""
-                            width={354}
-                            height={226}
-                            className="border rounded-[20px] overflow-hidden"
-                        />
+                    <figure className="border-[3px] border-[#763201] rounded-[24px] w-fit p-[20px] gap-[24px] flex flex-col  min-w-20 max-w-[30rem] ">
+                        <div className="">
+                            <img
+                                src={thumbnail}
+                                alt=""
+                                height={126}
+                                className="border rounded-[20px] w-full overflow-hidden"
+                            />
+                        </div>
 
                         <figcaption className=" flex flex-col gap-[4px]">
                             <div className="badge bg-[#FAC418] rounded-[36px] text-[12px] font-[600] w-fit text-white leading-[16px] py-[5px] px-[15px]">
@@ -136,14 +138,15 @@ function Orders() {
                             Detail
                         </PrimaryButton>
                     </figure>
-                    <figure className="border-[3px] border-[#763201] rounded-[24px] w-fit p-[20px] gap-[24px] flex flex-col ">
-                        <img
-                            src={thumbnail}
-                            alt=""
-                            width={354}
-                            height={226}
-                            className="border rounded-[20px] overflow-hidden"
-                        />
+                    <figure className="border-[3px] border-[#763201] rounded-[24px] w-fit p-[20px] gap-[24px] flex flex-col  min-w-20 max-w-[30rem] ">
+                        <div className="">
+                            <img
+                                src={thumbnail}
+                                alt=""
+                                height={126}
+                                className="border rounded-[20px] w-full overflow-hidden"
+                            />
+                        </div>
 
                         <figcaption className=" flex flex-col gap-[4px]">
                             <div className="badge bg-[#FAC418] rounded-[36px] text-[12px] font-[600] w-fit text-white leading-[16px] py-[5px] px-[15px]">
@@ -156,7 +159,32 @@ function Orders() {
                                 Tanggal : 12 September 2024
                             </p>
                         </figcaption>
-                        <PrimaryButton className="font-normal rounded-[10px] w-[161px]  flex justify-center h-[40px] self-end text-[20px]">
+                        <PrimaryButton className="font-normal rounded-[10px] w-[161px]  flex justify-center h-[40px] self-end text-[20px] ">
+                            Detail
+                        </PrimaryButton>
+                    </figure>
+                    <figure className="border-[3px] border-[#763201] rounded-[24px] w-fit p-[20px] gap-[24px] flex flex-col  min-w-20 max-w-[30rem] ">
+                        <div className="">
+                            <img
+                                src={thumbnail}
+                                alt=""
+                                height={126}
+                                className="border rounded-[20px] w-full overflow-hidden"
+                            />
+                        </div>
+
+                        <figcaption className=" flex flex-col gap-[4px]">
+                            <div className="badge bg-[#FAC418] rounded-[36px] text-[12px] font-[600] w-fit text-white leading-[16px] py-[5px] px-[15px]">
+                                Sedang Diproses
+                            </div>
+                            <h3 className="text-[24px] font-[700] leading-[36px] text-black">
+                                Acara Lainnya
+                            </h3>
+                            <p className="text-[16px] font-[600] leading-[24px]">
+                                Tanggal : 12 September 2024
+                            </p>
+                        </figcaption>
+                        <PrimaryButton className="font-normal rounded-[10px] w-[161px]  flex justify-center h-[40px] self-end text-[20px] ">
                             Detail
                         </PrimaryButton>
                     </figure>

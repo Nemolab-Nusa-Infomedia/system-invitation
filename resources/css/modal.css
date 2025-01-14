@@ -1,0 +1,76 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(5%); /* Mulai sedikit lebih tinggi */
+    }
+    60% {
+        transform: translateY(-3%); /* Sedikit gerakan ke atas */
+    }
+    80% {
+        transform: translateY(2%); /* Sedikit gerakan ke bawah */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceOut {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-2%); /* Sedikit gerakan ke atas */
+    }
+    40%,
+    100% {
+        transform: translateY(10%); /* Gerakan ke bawah */
+    }
+}
+
+.modal-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.3s linear;
+}
+
+.modal-overlay.show {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-overlay.hide {
+    animation: fadeOut 0.3s ease forwards;
+}
+
+.modal-content {
+    transform: translateY(20%); /* Mulai sedikit lebih tinggi */
+    animation: bounceOut 0.3s ease forwards;
+}
+
+.modal-overlay.show .modal-content {
+    animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.modal-overlay.hide .modal-content {
+    animation: bounceOut 0.4s ease forwards;
+}

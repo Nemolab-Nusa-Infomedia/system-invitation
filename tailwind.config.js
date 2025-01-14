@@ -28,9 +28,14 @@ export default {
                 upDown: {
                     "50%": { transform: "translateY(20px)" },
                 },
+                fadeInUp: {
+                    "0%": { opacity: "0", transform: "translateY(20px)" },
+                    "100%": { opacity: "1", transform: "translateY(0)" },
+                },
             },
             animation: {
                 upDown: "upDown 2s ease-in-out infinite",
+                fadeInUp: "fadeInUp 1s ease-out",
             },
         },
     },

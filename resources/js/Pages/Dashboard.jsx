@@ -11,7 +11,7 @@ function Dashboard() {
         <AuthenticatedLayout>
             <Head title="Dashboard" />
 
-            <main className="bg-gray-300">
+            <main className="">
                 Selamat Datang Abdul Manaf,
                 <div>Pesan Apa untuk Momen Istimewamu Hari Ini?</div>
                 <div className="flex justify-center items-center flex-wrap gap-[16px] p-[32px]">
