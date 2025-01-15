@@ -10,10 +10,10 @@ import cs from "/public/asset-landing-page/cs.png";
 export default function Index() {
     return (
         <main className="relative">
-            <a href="https://wa.me/+6281367738354?text=Halo" target="_blank">
+            <a href="https://wa.me/+62000000000?text=Halo" target="_blank">
                 <img
                     src={cs}
-                    className="fixed bottom-4 right-4 z-50 w-28"
+                    className="fixed bottom-5 right-5 z-50 w-24 lg:w-28"
                     alt=""
                 />
             </a>
