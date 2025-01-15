@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import "../../css/undangan-v1/main.css";
 import QuoteSection from "@/Components/invitation/wedding/QuoteSection";
 import MempelaiSection from "@/Components/invitation/wedding/MempelaiSection";
 import EventSection from "@/Components/invitation/wedding/EventSection";
-import DoaSection from "@/Components/invitation/wedding/DoaSection";
-import FormDoa from "@/Pages/Invitation/Form_Section/Wedding/FormDoa";
+import PenutupSection from "@/Components/invitation/wedding/PenutupSection";
+import FormPenutup from "@/Pages/Invitation/Form_Section/Wedding/FormPenutup";
+import FormQuote from "@/Pages/Invitation/Form_Section/Wedding/FormQuote";
+
+// import dataJson from '/public/dummy-data/data.json'
+import axios from "axios";
 
 function ContentWeddingV1() {
+    const [data, setData] = useState(null);
+    const [closeModal, setCloseModal] = useState(false);
+    const handleCloseModal = useCallback(() => {
+        setCloseModal(true);
+
+        setTimeout(() => {
+            setCloseModal(false);
+        }, 300);
+    });
+
     const groom = {
         name: "Rama Bagus Pramana",
         parents: "B apak Sugeng dan Ibu Tri Rahayu",
@@ -24,6 +38,18 @@ function ContentWeddingV1() {
         "Bpk Mulyadi & Ibu Sulastri",
         "Bpk Sugeng & Ibu Tri Rahayu",
     ];
+
+    useEffect(() => {
+        axios
+            .get("/dummy-data/data.json")
+            .then((response) => {
+                const data = response.data;
+                console.log(data);
+            })
+            .catch((err) => {
+                console.error("Error fetching JSON:", err);
+            });
+    }, []);
 
     return (
         <div className="flex flex-col w-screen relative">
@@ -73,9 +99,9 @@ function ContentWeddingV1() {
                     />
                     <QuoteSection
                         title="Rama & Shinta"
+                        onClose={closeModal}
                         quote="Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
                         reference="(Ar-Rum: 21)"
-                        form={<FormDoa />}
                     />
                 </div>
             </div>
@@ -204,10 +230,11 @@ function ContentWeddingV1() {
                         className="item-image-8"
                         alt=""
                     />
-                    <DoaSection
+                    <PenutupSection
                         title="Rama & Shinta"
                         message="Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta semoga Allah mempersatukan kalian berdua dalam kebaikan"
                         signers={signers}
+                        onClose={closeModal}
                     />
                 </div>
             </div>
