@@ -7,16 +7,16 @@ function CardKeunggulan({
     image,
     titlle,
     description,
+    title_class,
+    description_class,
 }) {
     return (
         <div className={`flex flex-col bg-[#FFEDF5] ${card_class}`}>
             <div className={`relative ${rounded_class}`}>
                 <img src={image} alt="image" className={image_class} />
             </div>
-            <h1 className="font-poppins font-bold text-lg leading-[27px] mt-[7px]">
-                Desain Eksklusif dan Fleksibel
-            </h1>
-            <p className="font-normal text-base leading-[22.5px]">
+            <h1 className={`font-poppins ${title_class}`}>Biaya terjangkau</h1>
+            <p className={description_class}>
                 Sesuaikan desain undangan Anda dengan tema acara, tanpa batasan
                 kreativitas.
             </p>
