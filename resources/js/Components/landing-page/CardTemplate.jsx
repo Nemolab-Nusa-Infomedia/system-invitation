@@ -4,17 +4,17 @@ import Button from "./Button";
 
 function CardTemplate() {
     return (
-        <div className="flex flex-col w-calc_3 gap-5">
+        <div className="flex flex-col gap-5">
             <img
                 className="w-[409px] max-h-[386px]"
                 src={preview_1}
                 alt="preview"
             />
             <div className="flex flex-col font-poppins gap-5">
-                <h1 className="font-semibold text-[27px] leading-10">
+                <h1 className="font-semibold text-[19px] lg:text-[27px] leading-[18.5px] lg:leading-10">
                     Rawah Suci
                 </h1>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
                     <Button
                         text="Lihat Demo"
                         link="/demo"
