@@ -5,18 +5,22 @@ import { footer_kontak, menuItems } from "@/lib";
 
 function Footer() {
     return (
-        <section className="flex justify-center w-full py-[30px] px-[110px] bg-[#60002C]">
-            <div className="max-w-[1440px] w-full flex flex-col">
-                <div className="flex justify-between">
-                    <div className="w-1/2 flex flex-col gap-[10px]">
-                        <img src={logo} alt="logo" className="w-[183px]" />
-                        <p className="font-poppins font-medium leading-[18px] max-w-[316px] text-xs text-white">
+        <section className="flex  justify-center w-full  bg-[#a31543]">
+            <div className="max-w-[1440px] w-full flex py-[30px] px-[55px] relative lg:px-[69px] flex-col ">
+                <div className="flex flex-col lg:flex-row justify-between gap-5 ">
+                    <div className="w-full lg:w-1/2 flex flex-col gap-[10px]">
+                        <img
+                            src={logo}
+                            alt="logo"
+                            className="w-[162px] lg:w-[183px]"
+                        />
+                        <p className="font-poppins font-medium leading-[18px] max-w-[316px] mt-[10px] text-xs text-white">
                             Hadirkan inovasi dalam cara Anda mengundang.
                             platform kreatif untuk membuat undangan digital yang
                             memukau!
                         </p>
                     </div>
-                    <div className="flex w-1/2 justify-between">
+                    <div className="flex flex-col lg:flex-row w-full gap-5 lg:w-1/2 justify-between">
                         <div className="text-white">
                             <h1 className="poppins font-semibold text-lg leading-7 mb-1">
                                 Navigasi
@@ -33,7 +37,7 @@ function Footer() {
                         </div>
                         {footer_kontak.map((items, index) => (
                             <div
-                                className="w-[348px] flex flex-col gap-1 text-white"
+                                className="w-full lg:w-[348px] flex flex-col gap-1 text-white"
                                 key={index}
                             >
                                 <h1 className="poppins font-semibold text-lg leading-7 mb-1">
@@ -54,17 +58,20 @@ function Footer() {
                                 ))}
                             </div>
                         ))}
-                        <a href="#" className="animate-upDown">
+                        <a
+                            href="#"
+                            className="animate-upDown absolute top-5 right-7"
+                        >
                             <div className="bg-white flex justify-center items-center rounded-full w-[60px] h-[60px]">
                                 <img src={arrow_top} alt="arrow" />
                             </div>
                         </a>
                     </div>
                 </div>
-                <div className="h-[1px] w-full mt-5 bg-white" />
-                <div className="flex items-center justify-between w-full mt-6">
+                <div className="h-[1px] w-full mt-7 lg:mt-5 bg-white" />
+                <div className="flex flex-col lg:flex-row lg:items-center gap-[10px] justify-between w-full mt-6">
                     <div className="text-white">
-                        <h1 className="font-poppins font-medium text-xl leading-[30px]">
+                        <h1 className="font-poppins font-medium text-[10px] lg:text-xl leading-[15px] lg:leading-[30px]">
                             Copyright © 2024 Logo | Powered by Vibrant Ecosystem
                         </h1>
                     </div>
