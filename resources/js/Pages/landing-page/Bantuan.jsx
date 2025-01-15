@@ -15,18 +15,19 @@ function Bantuan() {
             id="bantuan"
         >
             <div className="absolute inset-0 bg-help-section opacity-10" />
-            <div className="max-w-[1440px] w-full h-[713px] px-[93px] py-[60px] z-10">
+            <div className="max-w-[1440px] w-full px-[18px]  lg:px-[93px] py-[60px] z-10">
                 <div className="text-center text-white">
-                    <h1 className="font-poppins font-bold text-3xl leading-[43.5px]">
+                    <h1 className="font-poppins text-[23px] font-bold lg:text-3xl leading-[35px] lg:leading-[43.5px]">
                         Langkah Mudah Memesan Undangan
                     </h1>
-                    <p className="font-poppins font-medium text-xl leading-[28.5px]">
-                        Ikuti langkah mudah untuk mendapatkan undangan impian
-                        Anda.
+                    <p className="font-poppins font-normal lg:font-medium text-base lg:text-xl leading-6 lg:leading-[28.5px]">
+                        Pilih Desain Undangan yang Memukau dan Sesuai dengan
+                        Tema, Konsep, serta Ciri Khas Acara Anda yang Tak
+                        Terlupakan
                     </p>
                 </div>
-                <div className="mt-14 flex w-full gap-5">
-                    <div className="w-1/3 h-[411px] flex flex-col justify-around">
+                <div className="mt-14 lg:flex w-full gap-5">
+                    <div className="lg:w-1/3 h-[411px] flex flex-col justify-around">
                         <Card
                             image={user_add}
                             class_card="flex-row-reverse text-end"
@@ -49,14 +50,14 @@ function Bantuan() {
                             description="Pilih dari berbagai template yang tersedia."
                         />
                     </div>
-                    <div className="w-[300px]">
+                    <div className="w-full flex justify-center lg:w-1/3">
                         <img
                             src={mockup_phone}
                             alt="mockup phone"
                             className="h-auto w-auto"
                         />
                     </div>
-                    <div className="w-1/3 h-[411px] flex flex-col justify-around">
+                    <div className="lg:w-1/3 h-[411px] flex flex-col justify-around">
                         <Card
                             image={text_svg}
                             alt="text"

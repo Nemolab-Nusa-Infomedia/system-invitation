@@ -7,7 +7,7 @@ import cross from "/public/asset-landing-page/cross.svg";
 function PaketCard() {
     return (
         <>
-            <div className="card bg-[#FFEFF6] max-w-[300px] rounded-2xl  flex flex-col gap-[14px] py-[18px] px-5">
+            <div className="card bg-[#FFEFF6] rounded-2xl  flex flex-col gap-[14px] py-[18px] px-5">
                 {/* Header */}
                 <div className="font-poppins flex flex-col gap-[14px]">
                     <h2 className="font-bold text-xl leading-[30px]">
@@ -49,6 +49,28 @@ function PaketCard() {
 
                             <p className="font-semibold leading-[18px] text-xs">
                                 Tamu Undangan
+                            </p>
+                        </span>
+                        <span className="flex gap-1 items-center">
+                            <img
+                                src={cross}
+                                alt="ceklist"
+                                className="h-5 w-5"
+                            />
+
+                            <p className="font-semibold leading-[18px] text-xs">
+                                Tidak Ada Fitur Custom
+                            </p>
+                        </span>
+                        <span className="flex gap-1 items-center">
+                            <img
+                                src={cross}
+                                alt="ceklist"
+                                className="h-5 w-5"
+                            />
+
+                            <p className="font-semibold leading-[18px] text-xs">
+                                Tidak Ada Fitur Custom
                             </p>
                         </span>
                         <span className="flex gap-1 items-center">
