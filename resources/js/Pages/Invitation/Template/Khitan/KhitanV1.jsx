@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../css/main.css";
+import "../css/khitan-v1/main.css";
 import Aos from "aos";
 
 function KhitanV1() {
@@ -12,27 +12,27 @@ function KhitanV1() {
             <div className="flex justify-center items-center mx-auto w-full lg:w-1/3">
                 <div className="cover flex flex-col items-center justify-center">
                     <img
-                        src="../../asset/img/undangan-v3/item-1.png"
+                        src="/invitation-asset/khitan-v1/item-1.png"
                         className="item-image-1"
                         alt="Item 1"
                     />
                     <img
-                        src="../../asset/img/undangan-v3/item-2.png"
+                        src="/invitation-asset/khitan-v1/item-2.png"
                         className="item-image-2"
                         alt="Item 2"
                     />
                     <img
-                        src="../../asset/img/undangan-v3/item-3.png"
+                        src="/invitation-asset/khitan-v1/item-3.png"
                         className="item-image-3"
                         alt="Item 3"
                     />
                     <img
-                        src="../../asset/img/undangan-v3/item-4.png"
+                        src="/invitation-asset/khitan-v1/item-4.png"
                         className="item-image-4"
                         alt="Item 4"
                     />
                     <img
-                        src="../../asset/img/undangan-v3/item-5.png"
+                        src="/invitation-asset/khitan-v1/item-5.png"
                         className="item-image-5"
                         alt="Item 5"
                     />
@@ -53,13 +53,13 @@ function KhitanV1() {
                         data-aos-duration="3000"
                     >
                         <img
-                            src="../../asset/img/undangan-v3/item-6.png"
+                            src="/invitation-asset/khitan-v1/item-6.png"
                             className="image-cover-border"
                             alt="Cover Border"
                         />
                         <div className="image-cover">
                             <img
-                                src="../../asset/img/undangan-v3/people-2.png"
+                                src="/invitation-asset/khitan-v1/people-2.png"
                                 className="image-cover-people"
                                 alt="People"
                             />

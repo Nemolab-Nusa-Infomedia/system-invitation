@@ -3,11 +3,7 @@ import "../../css/khitan-v1/main.css";
 import location from "/public/asset-landing-page/location.svg";
 // import Aos from "aos";
 
-function KhitanV1() {
-    // useEffect(() => {
-    //     Aos.init();
-    // }, []);
-
+function ContentKhitanV1() {
     return (
         <body className="w-full">
             <audio hidden autoPlay loop>
@@ -19,24 +15,24 @@ function KhitanV1() {
                     <img
                         data-aos="fade-down-right"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-1.png"
+                        src="/invitation-asset/khitan-v1/item-1.png"
                         className="item-image-1"
                         alt="cek"
                     />
                     <img
                         data-aos="fade-down-left"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-2.png"
+                        src="/invitation-asset/khitan-v1/item-2.png"
                         className="item-image-2"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/khitan-v3/item-3.png"
+                        src="/invitation-asset/khitan-v1/item-3.png"
                         className="item-image-3"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/khitan-v3/item-4.png"
+                        src="/invitation-asset/khitan-v1/item-4.png"
                         className="item-image-4"
                         alt=""
                     />
@@ -57,7 +53,7 @@ function KhitanV1() {
                         <img
                             data-aos="flip-left"
                             data-aos-duration="3000"
-                            src="/invitation-asset/khitan-v3/people.jpg"
+                            src="/invitation-asset/khitan-v1/people.jpg"
                             className="tentang-image mt-2 mb-4"
                             alt=""
                         />
@@ -74,38 +70,38 @@ function KhitanV1() {
                     <img
                         data-aos="fade-down-right"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-1.png"
+                        src="/invitation-asset/khitan-v1/item-1.png"
                         className="item-image-1"
                         alt=""
                     />
                     <img
                         data-aos="fade-down-left"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-2.png"
+                        src="/invitation-asset/khitan-v1/item-2.png"
                         className="item-image-2"
                         alt=""
                     />
                     <img
                         data-aos="fade-up-right"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-3.png"
+                        src="/invitation-asset/khitan-v1/item-3.png"
                         className="item-image-3"
                         alt=""
                     />
                     <img
                         data-aos="fade-up-left"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-4.png"
+                        src="/invitation-asset/khitan-v1/item-4.png"
                         className="item-image-4"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/khitan-v3/item-7.png"
+                        src="/invitation-asset/khitan-v1/item-7.png"
                         className="item-image-6"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/khitan-v3/item-7.png"
+                        src="/invitation-asset/khitan-v1/item-7.png"
                         className="item-image-7"
                         alt=""
                     />
@@ -213,28 +209,28 @@ function KhitanV1() {
                     <img
                         data-aos="fade-down-right"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-1.png"
+                        src="/invitation-asset/khitan-v1/item-1.png"
                         className="absolute top-0 left-0 w-32"
                         alt="item-1"
                     />
                     <img
                         data-aos="fade-down-left"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-2.png"
+                        src="/invitation-asset/khitan-v1/item-2.png"
                         className="absolute top-0 right-0 w-32"
                         alt="item-2"
                     />
                     <img
                         data-aos="fade-up-right"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-3.png"
+                        src="/invitation-asset/khitan-v1/item-3.png"
                         className="absolute bottom-0 left-0 w-32"
                         alt="item-3"
                     />
                     <img
                         data-aos="fade-up-left"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-4.png"
+                        src="/invitation-asset/khitan-v1/item-4.png"
                         className="absolute bottom-0 right-0 w-32"
                         alt="item-4"
                     />
@@ -292,24 +288,24 @@ function KhitanV1() {
                     <img
                         data-aos="fade-down-right"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-1.png"
+                        src="/invitation-asset/khitan-v1/item-1.png"
                         className="absolute top-0 left-0 w-32"
                         alt="item-1"
                     />
                     <img
                         data-aos="fade-down-left"
                         data-aos-duration="2000"
-                        src="/invitation-asset/khitan-v3/item-2.png"
+                        src="/invitation-asset/khitan-v1/item-2.png"
                         className="absolute top-0 right-0 w-32"
                         alt="item-2"
                     />
                     <img
-                        src="/invitation-asset/khitan-v3/item-3.png"
+                        src="/invitation-asset/khitan-v1/item-3.png"
                         className="absolute bottom-0 left-0 w-32"
                         alt="item-3"
                     />
                     <img
-                        src="/invitation-asset/khitan-v3/item-4.png"
+                        src="/invitation-asset/khitan-v1/item-4.png"
                         className="absolute bottom-0 right-0 w-32"
                         alt="item-4"
                     />
@@ -324,7 +320,7 @@ function KhitanV1() {
                         <img
                             data-aos="flip-left"
                             data-aos-duration="3000"
-                            src="/invitation-asset/khitan-v3/people.jpg"
+                            src="/invitation-asset/khitan-v1/people.jpg"
                             className="mb-5 mx-auto rounded-lg shadow-lg"
                             alt="people"
                         />
@@ -348,4 +344,4 @@ function KhitanV1() {
     );
 }
 
-export default KhitanV1;
+export default ContentKhitanV1;

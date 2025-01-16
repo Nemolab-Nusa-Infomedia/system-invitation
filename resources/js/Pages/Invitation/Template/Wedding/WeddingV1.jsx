@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/main.css";
+import "../css/wedding-v1/main.css";
 import { useState, useEffect } from "react";
 import Modal from "@/Components/invitation/Modal";
 import FormSampul from "../../Form_Section/Wedding/FormSampul";
@@ -13,49 +13,49 @@ function WeddingV1() {
         <div className="lg:w-1/3  mx-auto ">
             <div className="cover items-center justify-center flex ">
                 <img
-                    src="/invitation-asset/undangan-v1/item-1.png"
+                    src="/invitation-asset/wedding-v1/item-1.png"
                     className="item-image-1"
                     alt="coba"
                 />
                 <img
-                    src="/invitation-asset/undangan-v1/line-2.png"
+                    src="/invitation-asset/wedding-v1/line-2.png"
                     className="item-image-2"
                     alt=""
                 />
                 <img
-                    src="/invitation-asset/undangan-v1/item-2.png"
+                    src="/invitation-asset/wedding-v1/item-2.png"
                     className="item-image-3"
                     alt=""
                 />
                 <img
-                    src="/invitation-asset/undangan-v1/line-1.png"
+                    src="/invitation-asset/wedding-v1/line-1.png"
                     className="item-image-4"
                     alt=""
                 />
                 <img
-                    src="/invitation-asset/undangan-v1/line-1.png"
+                    src="/invitation-asset/wedding-v1/line-1.png"
                     className="item-image-5"
                     alt=""
                 />
                 <img
-                    src="/invitation-asset/undangan-v1/item-3.png"
+                    src="/invitation-asset/wedding-v1/item-3.png"
                     className="item-image-6"
                     alt=""
                 />
                 <img
-                    src="/invitation-asset/undangan-v1/line-2.png"
+                    src="/invitation-asset/wedding-v1/line-2.png"
                     className="item-image-7"
                     alt=""
                 />
                 <img
-                    src="/invitation-asset/undangan-v1/item-4.png"
+                    src="/invitation-asset/wedding-v1/item-4.png"
                     className="item-image-8"
                     alt=""
                 />
 
                 <div className="flex flex-col items-center cover-content text-center p-3 animate-fadeInUp">
                     <img
-                        src="/invitation-asset/undangan-v1/gunungan.png"
+                        src="/invitation-asset/wedding-v1/gunungan.png"
                         className="mb-4"
                         width="120px"
                         alt=""

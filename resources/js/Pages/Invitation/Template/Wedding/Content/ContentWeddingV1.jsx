@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useEffect } from "react";
-import "../../css/undangan-v1/main.css";
+import "../../css/wedding-v1/main.css";
 import QuoteSection from "@/Components/invitation/wedding/QuoteSection";
 import MempelaiSection from "@/Components/invitation/wedding/MempelaiSection";
 import EventSection from "@/Components/invitation/wedding/EventSection";
@@ -64,37 +64,37 @@ function ContentWeddingV1() {
             <div className="flex lg:w-1/3 mx-auto ">
                 <div className="cover items-center justify-center flex ">
                     <img
-                        src="/invitation-asset/undangan-v1/item-1.png"
+                        src="/invitation-asset/wedding-v1/item-1.png"
                         className="item-image-1"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-2.png"
+                        src="/invitation-asset/wedding-v1/line-2.png"
                         className="item-image-2"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-2.png"
+                        src="/invitation-asset/wedding-v1/item-2.png"
                         className="item-image-3"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-1.png"
+                        src="/invitation-asset/wedding-v1/line-1.png"
                         className="item-image-4"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-3.png"
+                        src="/invitation-asset/wedding-v1/item-3.png"
                         className="item-image-6"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-2.png"
+                        src="/invitation-asset/wedding-v1/line-2.png"
                         className="item-image-7"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-4.png"
+                        src="/invitation-asset/wedding-v1/item-4.png"
                         className="item-image-8"
                         alt=""
                     />
@@ -110,37 +110,37 @@ function ContentWeddingV1() {
             <div className="flex lg:w-1/3 mx-auto">
                 <div className="cover items-center justify-center flex">
                     <img
-                        src="/invitation-asset/undangan-v1/item-1.png"
+                        src="/invitation-asset/wedding-v1/item-1.png"
                         className="item-image-1"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-2.png"
+                        src="/invitation-asset/wedding-v1/line-2.png"
                         className="item-image-2"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-2.png"
+                        src="/invitation-asset/wedding-v1/item-2.png"
                         className="item-image-3"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-1.png"
+                        src="/invitation-asset/wedding-v1/line-1.png"
                         className="item-image-4"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-3.png"
+                        src="/invitation-asset/wedding-v1/item-3.png"
                         className="item-image-6"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-2.png"
+                        src="/invitation-asset/wedding-v1/line-2.png"
                         className="item-image-7"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-4.png"
+                        src="/invitation-asset/wedding-v1/item-4.png"
                         className="item-image-8"
                         alt=""
                     />
@@ -151,37 +151,37 @@ function ContentWeddingV1() {
             <div className="w-full lg:w-1/3 mx-auto">
                 <div className="cover items-center justify-center flex">
                     <img
-                        src="/invitation-asset/undangan-v1/item-1.png"
+                        src="/invitation-asset/wedding-v1/item-1.png"
                         className="item-image-1"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-2.png"
+                        src="/invitation-asset/wedding-v1/line-2.png"
                         className="item-image-2"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-2.png"
+                        src="/invitation-asset/wedding-v1/item-2.png"
                         className="item-image-3"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-1.png"
+                        src="/invitation-asset/wedding-v1/line-1.png"
                         className="item-image-4"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-3.png"
+                        src="/invitation-asset/wedding-v1/item-3.png"
                         className="item-image-6"
                         alt=""
                     />
                     <img
-                        src="/invitation -asset/undangan-v1/line-2.png"
+                        src="/invitation -asset/wedding-v1/line-2.png"
                         className="item-image-7"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-4.png"
+                        src="/invitation-asset/wedding-v1/item-4.png"
                         className="item-image-8"
                         alt=""
                     />
@@ -197,37 +197,37 @@ function ContentWeddingV1() {
             <div className="flex w-full lg:w-1/3 mx-auto">
                 <div className="cover items-center justify-center flex">
                     <img
-                        src="/invitation-asset/undangan-v1/item-1.png"
+                        src="/invitation-asset/wedding-v1/item-1.png"
                         className="item-image-1"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-2.png"
+                        src="/invitation-asset/wedding-v1/line-2.png"
                         className="item-image-2"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-2.png"
+                        src="/invitation-asset/wedding-v1/item-2.png"
                         className="item-image-3"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-1.png"
+                        src="/invitation-asset/wedding-v1/line-1.png"
                         className="item-image-4"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-3.png"
+                        src="/invitation-asset/wedding-v1/item-3.png"
                         className="item-image-6"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/line-2.png"
+                        src="/invitation-asset/wedding-v1/line-2.png"
                         className="item-image-7"
                         alt=""
                     />
                     <img
-                        src="/invitation-asset/undangan-v1/item-4.png"
+                        src="/invitation-asset/wedding-v1/item-4.png"
                         className="item-image-8"
                         alt=""
                     />
