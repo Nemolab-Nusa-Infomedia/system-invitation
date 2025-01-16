@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "../../css/khitan-v1/main.css";
 import location from "/public/asset-landing-page/location.svg";
-import Aos from "aos";
+// import Aos from "aos";
 
 function KhitanV1() {
-    useEffect(() => {
-        Aos.init();
-    }, []);
+    // useEffect(() => {
+    //     Aos.init();
+    // }, []);
 
     return (
         <body className="w-full">

@@ -9,6 +9,7 @@ import FormQuote from "@/Pages/Invitation/Form_Section/Wedding/FormQuote";
 
 // import dataJson from '/public/dummy-data/data.json'
 import axios from "axios";
+import BottomNavbar from "@/Components/invitation/BottomNavbar";
 
 function ContentWeddingV1() {
     const [data, setData] = useState(null);
@@ -238,6 +239,7 @@ function ContentWeddingV1() {
                     />
                 </div>
             </div>
+            <BottomNavbar />
         </div>
     );
 }
