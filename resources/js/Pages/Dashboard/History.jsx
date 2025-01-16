@@ -2,9 +2,9 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import React from "react";
 import Footer from "@/Components/dashboard/Footer";
 import CardHistory from "@/Components/dashboard/CardHistory";
-import troll from "/public/assets-dashboard/troll.png";
-import history from "/public/assets-dashboard/history.png";
-import tanggal from "/public/assets-dashboard/tanggal.png";
+import troll from "/public/assets-dashboard/cart-icon.svg";
+import history from "/public/assets-dashboard/clock-icon.svg";
+import filterIcon from "/public/assets-dashboard/filter-icon.svg";
 
 function History() {
     return (
@@ -36,7 +36,7 @@ function History() {
 
                     {/* Sort Filter */}
                     <div className="flex items-center gap-2 cursor-pointer">
-                        <img src={tanggal} className="tect-black" />
+                        <img src={filterIcon} className="tect-black" />
                         <span className="text-sm font-medium">
                             Urutkan berdasarkan tanggal
                         </span>

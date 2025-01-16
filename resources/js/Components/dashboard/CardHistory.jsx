@@ -19,7 +19,7 @@ const CardHistory = ({ status, date, cancelDate, price }) => {
             </div>
 
             {/* Detail Produk */}
-            <div className="flex flex-col w-[633px] gap-[17px] shadow-md justify-between items-center">
+            <div className="flex flex-col w-[633px] gap-[17px] justify-between items-center">
                 <div className=" pl-5">
                     {/* Status */}
                     <div
