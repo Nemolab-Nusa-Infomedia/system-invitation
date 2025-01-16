@@ -6,8 +6,8 @@ import BottomNavbar from "@/Components/invitation/BottomNavbar";
 export default function Invitation() {
     return (
         <div className="w-full relative">
-            <WeddingV1 />
-            {/* <KhitanV1 /> */}
+            {/* <WeddingV1 /> */}
+            <KhitanV1 />
             <BottomNavbar />
         </div>
     );

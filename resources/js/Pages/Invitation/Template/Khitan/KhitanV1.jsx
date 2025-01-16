@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import "../css/main.css";
+// import "../css/main.css";
+import "../css/khitan-v1/main.css";
 import Aos from "aos";
 
 function KhitanV1() {
@@ -8,9 +9,9 @@ function KhitanV1() {
     }, []);
 
     return (
-        <body>
-            <div className="flex justify-center items-center mx-auto w-full lg:w-1/3">
-                <div className="cover flex flex-col items-center justify-center">
+        <div>
+            <div className="flex justify-center items-center mx-auto w-full ">
+                <div className="cover flex lg:w-1/3 flex-col items-center justify-center">
                     <img
                         src="../../asset/img/undangan-v3/item-1.png"
                         className="item-image-1"
@@ -90,7 +91,7 @@ function KhitanV1() {
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     );
 }
 
