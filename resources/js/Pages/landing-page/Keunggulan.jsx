@@ -68,7 +68,7 @@ function Keunggulan() {
                             Keunggulan Undangan Digital untuk Acara Lebih
                             Praktis dan Modern
                         </h1>
-                        <p className="text-xs leading-[18px] lg:leading-6">
+                        <p className="text-xs lg:text-base leading-[18px] lg:leading-6">
                             Undangan digital memberikan kemudahan dalam
                             mengelola acara Anda. Hemat biaya, ramah lingkungan,
                             dan praktis digunakan, membuat setiap momen terasa
