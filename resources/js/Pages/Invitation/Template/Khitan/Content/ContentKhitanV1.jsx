@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import "../../css/khitan-v1/main.css";
 import location from "/public/asset-landing-page/location.svg";
-// import Aos from "aos";
 
 function ContentKhitanV1() {
     return (

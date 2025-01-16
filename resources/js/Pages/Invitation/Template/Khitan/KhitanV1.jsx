@@ -9,8 +9,8 @@ function KhitanV1() {
 
     return (
         <body>
-            <div className="flex justify-center items-center mx-auto w-full lg:w-1/3">
-                <div className="cover flex flex-col items-center justify-center">
+            <div className="flex justify-center items-center mx-auto w-full ">
+                <div className="cover flex flex-col items-center lg:w-1/3 justify-center">
                     <img
                         src="/invitation-asset/khitan-v1/item-1.png"
                         className="item-image-1"
