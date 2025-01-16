@@ -1,0 +1,143 @@
+/* Styling untuk komponen KhitanV1 */
+.cover {
+    height: 100vh;
+    background-color: #652500;
+    position: relative;
+    overflow: hidden;
+}
+
+.itemImage1,
+.itemImage2,
+.itemImage3,
+.itemImage4 {
+    position: absolute;
+    width: 100px;
+}
+
+.itemImage1 {
+    top: 0;
+    left: 0;
+}
+
+.itemImage2 {
+    top: 0;
+    right: 0;
+}
+
+.itemImage3 {
+    bottom: 0;
+    left: 0;
+}
+
+.itemImage4 {
+    bottom: 0;
+    right: 0;
+}
+
+.itemImage5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 330px;
+    height: 95vh;
+    transform: translate(-50%, -50%);
+}
+
+.imageCoverWrapper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+.imageCover {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: translate(51%, 49%);
+    position: relative;
+    overflow: hidden;
+}
+
+.imageCoverBorder {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.imageCoverPeople {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.coverContent {
+    z-index: 10;
+}
+
+.coverContentTitle h3 {
+    font-family: "Allura", cursive;
+    font-size: 2rem;
+}
+
+.coverContent h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+}
+
+.coverContent a {
+    background-color: #b17f00;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 990px) {
+    .itemImage5 {
+        width: 450px;
+    }
+}
+
+@media (max-width: 450px) {
+    .itemImage1,
+    .itemImage2,
+    .itemImage3,
+    .itemImage4 {
+        width: 70px;
+    }
+    .itemImage5 {
+        width: 330px;
+    }
+}
+
+@media (max-width: 330px) {
+    .itemImage5 {
+        width: 280px;
+    }
+    .coverContentTitle h3 {
+        font-size: 22px;
+    }
+    .imageCover {
+        width: 70px;
+        height: 70px;
+    }
+    .imageCoverBorder {
+        width: 150px;
+        height: 150px;
+    }
+    .coverContent h3 {
+        font-size: 16px;
+    }
+    .coverContent a {
+        font-size: 8px;
+    }
+}

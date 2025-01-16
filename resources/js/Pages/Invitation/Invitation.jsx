@@ -7,8 +7,8 @@ import NatalV1 from "./Template/Natal/NatalV1";
 export default function Invitation() {
     return (
         <div className="w-full relative">
-            {/* <WeddingV1 /> */}
             {/* <KhitanV1 /> */}
+            {/* <WeddingV1 /> */}
             <NatalV1 />
             <BottomNavbar />
         </div>

@@ -4,6 +4,7 @@ import { FaCog, FaLock, FaEye } from "react-icons/fa"; // Ikon dari FontAwesome
 import { PiShareFatFill } from "react-icons/pi";
 import Modal from "./Modal";
 import Form from "./Form";
+import FormBottomNav from "./FormBottomNav";
 
 export default function BottomNavbar() {
     // State untuk membuka modal
@@ -73,9 +74,23 @@ export default function BottomNavbar() {
                     onClose={closeModal}
                     ml={"-ml-[0rem]"}
                 >
-                    <Form className="bg-white ">
-                        <div className="px-4 pb-16 py-5  h-[27rem] overflow-auto scrollbar-vertical border border-gray-300 rounded-md"></div>
-                    </Form>
+                    {/* Menu */}
+                    <FormBottomNav></FormBottomNav>
+                    {/* Menu end */}
+
+                    {/* Settings */}
+
+                    {/* Setting end */}
+
+                    {/* Preview */}
+
+                    {/* Preview end */}
+
+                    {/* Aktivasi */}
+
+                    {/* Aktivasi end */}
+
+                    {/* Share */}
                 </Modal>
             </div>
             {/* Modal */}
