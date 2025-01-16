@@ -1,0 +1,39 @@
+/* Tambahkan ini di file CSS Anda */
+.scrollbar-vertical::-webkit-scrollbar {
+    width: 10px; /* Lebar scrollbar */
+}
+
+.scrollbar-vertical::-webkit-scrollbar-thumb {
+    background: #c0bebe; /* Warna thumb */
+    border-radius: 4px; /* Radius thumb */
+}
+
+.scrollbar-verical::-webkit-scrollbar-thumb:hover {
+    background: #b6b6b6; /* Warna thumb saat hover */
+}
+
+.scrollbar-vertical::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Warna track */
+}
+
+/* Scollbar button */
+.scrollbar-horizontal {
+    overflow-x: auto; /* Pastikan elemen dapat di-scroll secara horizontal */
+}
+
+.scrollbar-horizontal::-webkit-scrollbar {
+    height: 10px; /* Ubah tinggi scrollbar horizontal */
+}
+
+.scrollbar-horizontal::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Warna latar belakang track */
+}
+
+.scrollbar-horizontal::-webkit-scrollbar-thumb {
+    background: #c0bebe; /* Warna scrollbar */
+    border-radius: 10px; /* Opsional: Tambahkan border radius */
+}
+
+.scrollbar-horizontal::-webkit-scrollbar-thumb:hover {
+    background: #b6b6b6; /* Warna saat hover */
+}

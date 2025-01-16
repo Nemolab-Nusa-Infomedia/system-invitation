@@ -1,24 +1,21 @@
 import Modal from "@/Components/invitation/Modal";
-import FormQuote from "@/Pages/Invitation/Form_Section/Wedding/FormQuote";
+import FormPenutup from "@/Pages/Invitation/Form_Section/Wedding/FormPenutup";
 import { useState } from "react";
 
-const QuoteSection = ({ title, quote, reference, onClose }) => {
+const PenutupSection = ({ title, message, signers }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
     const handleOpenModal = () => setModalOpen(true);
     const handleCloseModal = () => setModalOpen(false);
 
     return (
-        <div className="quotes-content text-center p-3 animate-fadeInUp ">
+        <div className="doa-content flex flex-col gap-3 text-center p-3 ">
             <div
                 className="border border-dashed cursor-text"
                 onClick={handleOpenModal}
             >
-                {/* Title opens modal */}
-                <h3 className="mb-3  ">{title}</h3>
-
-                {/* Decorative Images */}
-                <div className="flex justify-center gap-2 mb-3">
+                <h3 className="mb-3">{title}</h3>
+                <div className="item-quotes-img mb-3 flex justify-center gap-2">
                     <img
                         src="/invitation-asset/undangan-v1/item-6.png"
                         width="30px"
@@ -35,19 +32,22 @@ const QuoteSection = ({ title, quote, reference, onClose }) => {
                         alt=""
                     />
                 </div>
-
-                {/* Quote Content */}
-                <div className="">
-                    <p className="mb-3">{quote}</p>
-                    <p>{reference}</p>
+                <p>{message}</p>
+                <p>[HR. Abu Daud]</p>
+                <div className="ttd flex justify-around w-full text-center mx-auto">
+                    {signers.map((signer, index) => (
+                        <div key={index} className="col-6 col-md-6">
+                            <p className="mb-0">Keluarga</p>
+                            <p>{signer}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
-            {/* Modal */}
             <Modal show={isModalOpen} onClose={handleCloseModal}>
-                <FormQuote onClose={handleCloseModal} />
+                <FormPenutup onClose={handleCloseModal} />
             </Modal>
         </div>
     );
 };
 
-export default QuoteSection;
+export default PenutupSection;

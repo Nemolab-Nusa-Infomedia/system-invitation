@@ -20,31 +20,29 @@
     }
 }
 
-@keyframes bounceIn {
+@keyframes slideIn {
     0% {
-        transform: translateY(5%); /* Mulai sedikit lebih tinggi */
-    }
-    60% {
-        transform: translateY(-3%); /* Sedikit gerakan ke atas */
-    }
-    80% {
-        transform: translateY(2%); /* Sedikit gerakan ke bawah */
+        transform: translateY(100%); /* Mulai dari bawah */
+        opacity: 0; /* Mulai dengan transparan */
     }
     100% {
-        transform: translateY(0);
+        transform: translateY(0); /* Akhir di posisi normal */
+        opacity: 1; /* Akhir dengan tampak penuh */
     }
 }
 
-@keyframes bounceOut {
+@keyframes slideOut {
     0% {
-        transform: translateY(0);
+        transform: translateY(0); /* Mulai dari posisi normal */
+        opacity: 1; /* Mulai dengan tampak penuh */
     }
-    20% {
-        transform: translateY(-2%); /* Sedikit gerakan ke atas */
+    50% {
+        transform: translateY(20%); /* Sedikit gerakan ke bawah */
+        opacity: 0.5; /* Sedikit transparan */
     }
-    40%,
     100% {
-        transform: translateY(10%); /* Gerakan ke bawah */
+        transform: translateY(100%); /* Akhir di bawah */
+        opacity: 0; /* Akhir dengan transparan */
     }
 }
 
@@ -62,15 +60,10 @@
     animation: fadeOut 0.3s ease forwards;
 }
 
-.modal-content {
-    transform: translateY(20%); /* Mulai sedikit lebih tinggi */
-    animation: bounceOut 0.3s ease forwards;
-}
-
 .modal-overlay.show .modal-content {
-    animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation: slideIn 0.4s ease forwards;
 }
 
 .modal-overlay.hide .modal-content {
-    animation: bounceOut 0.4s ease forwards;
+    animation: slideOut 0.4s ease forwards; /* Perbaiki penamaan di sini */
 }

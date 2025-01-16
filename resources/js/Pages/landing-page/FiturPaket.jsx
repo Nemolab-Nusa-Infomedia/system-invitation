@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "../../../css/app.css";
+import { Paket } from "@/lib";
 
 const FiturPaket = () => {
     return (
@@ -22,10 +24,17 @@ const FiturPaket = () => {
 
                 {/* Desktop View */}
                 <div className="hidden lg:grid lg:grid-cols-2 xl:grid-cols-4 justify-around items-center mt-8 w-full gap-5">
-                    <PaketCard />
-                    <PaketCard />
-                    <PaketCard />
-                    <PaketCard />
+                    {Paket.map((items) => (
+                        <PaketCard
+                            key={items.judul}
+                            judul={items.judul}
+                            harga={items.harga}
+                            durasi={items.durasi}
+                            deskripsi={items.deskripsi}
+                            href={items.href}
+                            fitur={items.fitur}
+                        />
+                    ))}
                 </div>
 
                 {/* Mobile Carousel dengan Swiper */}
@@ -42,57 +51,23 @@ const FiturPaket = () => {
                         }}
                         className="mySwiper relative"
                     >
-                        <SwiperSlide>
-                            <div className="pb-12">
-                                <PaketCard />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="pb-12">
-                                <PaketCard />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="pb-12">
-                                <PaketCard />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="pb-12">
-                                <PaketCard />
-                            </div>
-                        </SwiperSlide>
+                        {Paket.map((items) => (
+                            <SwiperSlide key={items.judul}>
+                                <div className="pb-12">
+                                    <PaketCard
+                                        judul={items.judul}
+                                        harga={items.harga}
+                                        durasi={items.durasi}
+                                        deskripsi={items.deskripsi}
+                                        href={items.href}
+                                        fitur={items.fitur}
+                                    />
+                                </div>
+                            </SwiperSlide>
+                        ))}
                     </Swiper>
                 </div>
             </div>
-
-            {/* Custom styles untuk pagination bullets */}
-            <style jsx global>{`
-                .swiper-container {
-                    position: relative;
-                }
-
-                .swiper-pagination {
-                    position: absolute;
-                    left: 50% !important;
-                    transform: translateX(-50%) !important;
-                    width: auto !important;
-                    display: flex;
-                    gap: 8px;
-                }
-
-                .swiper-pagination-bullet {
-                    width: 10px;
-                    height: 10px;
-                    background: #d1d5db;
-                    opacity: 1;
-                    margin: 0 !important;
-                }
-
-                .swiper-pagination-bullet-active {
-                    background: rgba(163, 22, 67, 1);
-                }
-            `}</style>
         </section>
     );
 };
