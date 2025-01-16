@@ -2,9 +2,9 @@ import React from "react";
 import { Head } from "@inertiajs/react";
 import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import Card from "@/Components/dashboard/BorderDashboard";
-import pernikahan from "/public/assets-dashboard/cincin.png";
-import kedukaan from "/public/assets-dashboard/duka.png";
-import acara from "/public/assets-dashboard/kado.png";
+import pernikahan from "/public/assets-dashboard/vector.svg";
+import kedukaan from "/public/assets-dashboard/duka.svg";
+import acara from "/public/assets-dashboard/kado.svg";
 
 function Dashboard() {
     return (
