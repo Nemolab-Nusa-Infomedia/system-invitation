@@ -41,6 +41,9 @@ Route::get('/dashboard/invitation/edit/content', function () {
     return Inertia::render('Invitation/Template/Khitan/Content/ContentKhitanV1');
 });
 
+Route::get('/dashboard/natal/edit/content', function () {
+    return Inertia::render('Invitation/Template/Natal/Content/ContentNatalV1');
+});
 
 
 Route::middleware(['auth', 'verified'])->group(function () {
