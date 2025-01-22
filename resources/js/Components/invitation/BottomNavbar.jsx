@@ -94,6 +94,72 @@ export default function BottomNavbar() {
                 "Berikan masukkan & saran untuk kami bisa terus berkembang dan melayani anda",
         },
     ];
+    // Pengaturan
+    const listMenuPengaturan = [
+        {
+            icon: FaHome,
+            menuName: "Komponen Undangan",
+            description:
+                "Ubah urutan undangan atau sembunyikan komponen yang ada",
+        },
+        {
+            icon: FaHome,
+            menuName: "Tema",
+            description: "Ubah tema undangan tanpa batas",
+        },
+        {
+            icon: FaHome,
+            menuName: "Musik",
+            description: "Ubah musik atau upload musik Anda sendiri",
+        },
+        {
+            icon: FaHome,
+            menuName: "Warna & Font Tema",
+            description: "Ubah warna dan jenis font sesuai selera Anda",
+        },
+        {
+            icon: FaHome,
+            menuName: "Foto Sampul",
+            description: "Ubah fot sampul pada undangan",
+        },
+        {
+            icon: FaHome,
+            menuName: "Sampul Depan",
+            description: "Sesuaikan tulisan pada sampul depan undangan",
+        },
+        {
+            icon: FaHome,
+            menuName: "Custom Form Kehadiran",
+            description: "Tambahkan isian form baru pada form kehadiran",
+        },
+        {
+            icon: FaHome,
+            menuName: "Auto Scroll",
+            description: "Sesuaikan fitur Auto Scroll pada undangan",
+        },
+        {
+            icon: FaHome,
+            menuName: "Tampilan WhatsApp",
+            description:
+                "Sesuaikan preview undangan ketika disebar ke sosial media lainnya",
+        },
+        {
+            icon: FaHome,
+            menuName: "Kado Fisik",
+            description: "Pilih kado fisik yang akan ditampilkan pada undangan",
+        },
+        {
+            icon: FaHome,
+            menuName: "Notifikasi",
+            description:
+                "Atur notifikasi ketika anda yang memberikan konfirmasi kehadiran",
+        },
+        {
+            icon: FaHome,
+            menuName: "Pengaturan Lainnya",
+            description: "Lihat pengaturan lainnya di undangan",
+        },
+    ];
 
     return (
         <div className="fixed bottom-0 left-0 right-0 z-10">
