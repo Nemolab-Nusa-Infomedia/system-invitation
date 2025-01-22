@@ -62,8 +62,10 @@
 
 .modal-overlay.show .modal-content {
     animation: slideIn 0.4s ease forwards;
+    background-color: rgb(255, 255, 255);
 }
 
 .modal-overlay.hide .modal-content {
     animation: slideOut 0.4s ease forwards; /* Perbaiki penamaan di sini */
+    background-color: rgb(255, 255, 255);
 }

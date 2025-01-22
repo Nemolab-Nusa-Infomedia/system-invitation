@@ -67,7 +67,7 @@ li {
 /* cover content */
 
 .cover-content {
-    z-index: 99;
+    z-index: 0;
 }
 
 .cover-content h3 {

@@ -19,7 +19,7 @@ export default function FormQuote({ onClose }) {
 
     return (
         <Form onSubmit={handleSubmit}>
-            <div className="px-4 pb-16 py-5  h-[27rem] overflow-auto scrollbar-vertical border border-gray-300 rounded-md">
+            <div className="px-4 pb-16 py-5  h-[27rem] overflow-auto scrollbar-vertical border-y border-gray-300 ">
                 <div className="nama-mempelai flex flex-col ">
                     <InputLabel
                         value={"Nama Mempelai"}
