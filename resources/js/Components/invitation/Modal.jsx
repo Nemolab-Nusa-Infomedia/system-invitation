@@ -33,7 +33,7 @@ const Modal = ({ show, onClose, children, ml }) => {
         >
             <div className="bg-gray-900/75 lg:w-1/3 fixed h-screen top-0"></div>
             <div
-                className={`modal-content w-full h-[35rem] rounded-t-xl  bg-white  ${animationClass}`}
+                className={`modal-content w-full h-[35rem] rounded-t-xl z-[9999]    ${animationClass}`}
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className="flex flex-col py-2 ">

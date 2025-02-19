@@ -3,7 +3,7 @@ import "../css/natal-v1/main.css";
 
 function NatalV1() {
     return (
-        <body>
+        <div>
             <audio hidden autoPlay loop>
                 <source
                     src="/audio/Nothings Gonna Change My Love For You.mp3"
@@ -35,7 +35,7 @@ function NatalV1() {
                     />
 
                     <div
-                        className="cover-content flex flex-col items-center gap-3 text-center p-2"
+                        className="cover-content flex flex-col items-center gap-3 text-center p-2 "
                         data-aos="zoom-in-up"
                         data-aos-duration="3000"
                     >
@@ -58,7 +58,7 @@ function NatalV1() {
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
     );
 }
 

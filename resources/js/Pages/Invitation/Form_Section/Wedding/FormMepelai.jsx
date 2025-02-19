@@ -24,7 +24,7 @@ export default function FormMempelai({ onClose }) {
 
     return (
         <Form onSubmit={handleSubmit}>
-            <div className="px-4 pb-16 py-7  h-[27rem] overflow-auto scrollbar-vertical border border-gray-300 rounded-md">
+            <div className="px-4 pb-16 py-7  h-[27rem] overflow-auto scrollbar-vertical border-y border-gray-300 ">
                 <div className="mempelai-section  flex flex-col ">
                     <InputLabel className="flex justify-start font-[500]  text-gray-700  ">
                         Data Mempelai

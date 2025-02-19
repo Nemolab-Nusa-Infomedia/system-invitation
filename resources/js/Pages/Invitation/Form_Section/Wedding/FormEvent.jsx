@@ -23,7 +23,7 @@ const FormEvent = ({ onClose }) => {
 
     return (
         <Form onSubmit={handleSubmit}>
-            <div className="px-4 pb-16 py-7  h-[27rem] overflow-auto scrollbar-vertical border border-gray-300 rounded-md">
+            <div className="px-4 pb-16 py-7  h-[27rem] overflow-auto scrollbar-vertical border-y border-gray-300 ">
                 <InputLabel className="font-[500]  text-gray-700 text-left">
                     Detail Acara
                 </InputLabel>

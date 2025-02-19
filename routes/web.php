@@ -37,6 +37,10 @@ Route::get('/dashboard/wedding/edit/content', function () {
     return Inertia::render('Invitation/Template/Wedding/Content/ContentWeddingV1');
 });
 
+Route::get('/dashboard/invitation/edit/content', function () {
+    return Inertia::render('Invitation/Template/Khitan/Content/ContentKhitanV1');
+});
+
 Route::get('/dashboard/natal/edit/content', function () {
     return Inertia::render('Invitation/Template/Natal/Content/ContentNatalV1');
 });
