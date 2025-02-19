@@ -50,7 +50,7 @@ function NatalV1() {
                         <p>Kepada Yth;</p>
                         <p className="nama-tamu">Vindra Arya Yulian</p>
                         <a
-                            href="content/index.html"
+                            href="/dashboard/natal/edit/conten"
                             className="py-2 px-5  rounded-full text-base hover:bg-transparent transition-all"
                         >
                             Open Invitation
