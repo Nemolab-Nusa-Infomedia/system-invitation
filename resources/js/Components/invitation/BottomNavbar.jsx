@@ -1,16 +1,18 @@
-import React, { useState } from "react";
-import { FiMenu } from "react-icons/fi";
-import { FaCog, FaLock, FaEye } from "react-icons/fa";
-import { PiShareFatFill } from "react-icons/pi";
-import { FaHome } from "react-icons/fa";
+import React, { useState, useRef } from "react";
+import { listNav, listMenuNav, listPengaturanNav } from "@/lib";
+import { FaCopy } from "react-icons/fa";
 import { Link } from "@inertiajs/react";
 import Modal from "./Modal";
+import { PiShareFatFill } from "react-icons/pi";
+
 import "/resources/css/scrollbar.css";
 
 export default function BottomNavbar() {
     // State untuk membuka modal
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalContent, setModalContent] = useState("");
+    const [isCopy, setIsCopy] = useState(false);
+    const textAreaRef = useRef(null);
 
     // Fungsi untuk membuka modal
     const openModal = (content) => {
@@ -23,143 +25,21 @@ export default function BottomNavbar() {
         setIsModalOpen(false);
     };
 
-    const listNav = [
-        {
-            name: "Menu",
-            icon: FiMenu,
-        },
-        {
-            name: "Pengaturan",
-            icon: FaCog,
-        },
-        {
-            name: "Pratinjau",
-            icon: FaEye,
-        },
-        {
-            name: "Aktivasi",
-            icon: FaLock,
-        },
-        {
-            name: "Sebar",
-            icon: PiShareFatFill,
-        },
-    ];
+    const handleCopy = () => {
+        // Fokus pada textarea dan pilih teks
+        textAreaRef.current.select();
+        textAreaRef.current.setSelectionRange(0, 99999); // Untuk mobile devices
 
-    const listMenuNav = [
-        {
-            icon: FaHome,
-            menuName: "Dashboard Admin",
-            description: "Lihat daftar acara yang dibuat dan keloka akun anda",
-        },
-        {
-            icon: FaHome,
-            menuName: "Buat Acara Baru",
-            description: "Ulang buat acara untuk hasil yang lebih fresh",
-        },
-        {
-            icon: FaHome,
-            menuName: "Laporan Kehadiran",
-            description:
-                "Lihat siapa yang mengkonfirmasi hadir dan balas ucapannya",
-        },
-        {
-            icon: FaHome,
-            menuName: "Laporan QRCode Buku Tamu",
-            description:
-                "Lihat siapa yang telah mengisi buku tamu di acara annda",
-        },
-        {
-            icon: FaHome,
-            menuName: "Laporan Sebar Undangan",
-            description:
-                "Lihat berapa orang yang melihat undangan dan laporan lainnya",
-        },
-        {
-            icon: FaHome,
-            menuName: "Laporan Kado Fisik",
-            description:
-                "Lihat tamu undangan yang memberikan kado fisik ke acara anda",
-        },
-        {
-            icon: FaHome,
-            menuName: "Laporan Kado Virtual",
-            description:
-                "Lihat tamu undangan yang memberikan kado virtual ke acara anda",
-        },
-        {
-            icon: FaHome,
-            menuName: "Masukkan dan Saran",
-            description:
-                "Berikan masukkan & saran untuk kami bisa terus berkembang dan melayani anda",
-        },
-    ];
-    // Pengaturan
-    const listMenuPengaturan = [
-        {
-            icon: FaHome,
-            menuName: "Komponen Undangan",
-            description:
-                "Ubah urutan undangan atau sembunyikan komponen yang ada",
-        },
-        {
-            icon: FaHome,
-            menuName: "Tema",
-            description: "Ubah tema undangan tanpa batas",
-        },
-        {
-            icon: FaHome,
-            menuName: "Musik",
-            description: "Ubah musik atau upload musik Anda sendiri",
-        },
-        {
-            icon: FaHome,
-            menuName: "Warna & Font Tema",
-            description: "Ubah warna dan jenis font sesuai selera Anda",
-        },
-        {
-            icon: FaHome,
-            menuName: "Foto Sampul",
-            description: "Ubah fot sampul pada undangan",
-        },
-        {
-            icon: FaHome,
-            menuName: "Sampul Depan",
-            description: "Sesuaikan tulisan pada sampul depan undangan",
-        },
-        {
-            icon: FaHome,
-            menuName: "Custom Form Kehadiran",
-            description: "Tambahkan isian form baru pada form kehadiran",
-        },
-        {
-            icon: FaHome,
-            menuName: "Auto Scroll",
-            description: "Sesuaikan fitur Auto Scroll pada undangan",
-        },
-        {
-            icon: FaHome,
-            menuName: "Tampilan WhatsApp",
-            description:
-                "Sesuaikan preview undangan ketika disebar ke sosial media lainnya",
-        },
-        {
-            icon: FaHome,
-            menuName: "Kado Fisik",
-            description: "Pilih kado fisik yang akan ditampilkan pada undangan",
-        },
-        {
-            icon: FaHome,
-            menuName: "Notifikasi",
-            description:
-                "Atur notifikasi ketika anda yang memberikan konfirmasi kehadiran",
-        },
-        {
-            icon: FaHome,
-            menuName: "Pengaturan Lainnya",
-            description: "Lihat pengaturan lainnya di undangan",
-        },
-    ];
+        // Salin teks ke clipboard
+        document.execCommand("copy");
+
+        setIsCopy(true);
+
+        setTimeout(() => {
+            setIsCopy(true);
+            setIsCopy(false);
+        }, 1000);
+    };
 
     return (
         <div className="fixed bottom-0 left-0 right-0 z-10">
@@ -177,6 +57,14 @@ export default function BottomNavbar() {
                         <span>{item.name}</span>
                     </button>
                 ))}
+
+                <Link
+                    href=""
+                    className={`flex flex-col justify-center px-4 items-center hover:text-gray-400 transition-colors h-full flex-1 duration-300 `}
+                >
+                    <PiShareFatFill size={24} className="flex-shrink-0" />
+                    <span>Sebar</span>
+                </Link>
             </section>
 
             {/* Modal */}
@@ -189,7 +77,7 @@ export default function BottomNavbar() {
                     {/* Menu */}
 
                     <h1 className="text-lg mb-1">{modalContent}</h1>
-                    <div className=" flex flex-col p-3 border-y h-[30rem] overflow-scroll scrollbar-vertical rounded-md ">
+                    <div className=" flex flex-col py-3 pr-3  border-y h-[30rem] overflow-scroll scrollbar-vertical rounded-md ">
                         {modalContent === "Menu" &&
                             listMenuNav.map((item, index) => (
                                 <Link
@@ -202,7 +90,7 @@ export default function BottomNavbar() {
                                     </div>
                                     <div className="flex flex-col">
                                         <span className="text-lg">
-                                            {item.menuName}
+                                            {item.name}
                                         </span>
                                         <p className="text-[10px] text-gray-500">
                                             {item.description}
@@ -214,18 +102,115 @@ export default function BottomNavbar() {
                         {/* Menu end */}
 
                         {/* Settings */}
-
+                        {modalContent === "Pengaturan" &&
+                            listPengaturanNav.map((item, index) => (
+                                <Link
+                                    key={index}
+                                    href=""
+                                    className="border-b flex py-3 hover:bg-gray-100 rounded-lg"
+                                >
+                                    <div className="icon flex justify-center items-center w-12">
+                                        <item.icon size={30} />
+                                    </div>
+                                    <div className="flex flex-col">
+                                        <span className="text-lg">
+                                            {item.name}
+                                        </span>
+                                        <p className="text-[10px] text-gray-500">
+                                            {item.description}
+                                        </p>
+                                    </div>
+                                </Link>
+                            ))}
                         {/* Setting end */}
 
                         {/* Preview */}
+                        {modalContent === "Pratinjau" && (
+                            <section className="flex flex-col gap-5 text-[14px]">
+                                <div className="bg-blue-200 p-2 rounded-lg ">
+                                    Berhasil menyimpan silahkan preview atau
+                                    sebarkan undangan
+                                </div>
 
+                                <div className="bg-yellow-200 flex p-2 rounded-lg justify-between items-center">
+                                    <p className=" w-80">
+                                        <strong>peringatan</strong>: Aktifkan
+                                        undangan sebelum disebar. Klik tombol
+                                        <strong> Aktifkan</strong> pada bilah
+                                        menu
+                                    </p>
+                                    <button className="bg-blue-500 h-fit py-2 px-3 rounded-lg hover:bg-blue-700 text-white tracking-wider">
+                                        Aktifkan
+                                    </button>
+                                </div>
+
+                                <div className="link">
+                                    <div className="generate-link flex flex-col gap-2">
+                                        <label htmlFor="">
+                                            Hasil Link Undangan
+                                            <Link
+                                                href=""
+                                                className="text-blue-600"
+                                            >
+                                                {" "}
+                                                Edit Link
+                                            </Link>
+                                        </label>
+                                        <div className="flex ">
+                                            <textarea
+                                                ref={textAreaRef}
+                                                name=""
+                                                id=""
+                                                cols={1}
+                                                readOnly
+                                                className="rounded-lg border-blue-600 border-[3px] flex-1 text-blue-600 selection:bg-none "
+                                                value="https://id.indoinvite.com/s/734237/undangan?kpd=Bapak+Budi"
+                                            ></textarea>
+
+                                            <div className="mx-2 bg-inherit rounded flex items-center  gap-1 relative">
+                                                <div
+                                                    className="cursor-pointer  selection:bg-none"
+                                                    onClick={handleCopy}
+                                                >
+                                                    <FaCopy size={20} />
+                                                    <p>Copy</p>
+                                                </div>
+
+                                                <div
+                                                    className={`absolute -top-3 rounded-r-lg rounded-tl-lg bg-slate-300 p-1 text-xs ${
+                                                        isCopy
+                                                            ? "flex"
+                                                            : "hidden"
+                                                    }`}
+                                                >
+                                                    Copied
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="link-alternatif">
+                                    <span>Link Alternatif</span>
+                                    <div className="link"></div>
+                                    <div className="ekspor"></div>
+                                    <div className="custom-ekspor"></div>
+                                </div>
+                            </section>
+                        )}
                         {/* Preview end */}
 
                         {/* Aktivasi */}
-
+                        {modalContent === "Aktivasi" && (
+                            <section>
+                                <div className="bg-blue-200 p-2 rounded-lg">
+                                    <strong>Info</strong>: Setelah aktif
+                                    undangan masih bisa di Edit kembali, tanpa
+                                    batasan waktu!
+                                </div>
+                            </section>
+                        )}
                         {/* Aktivasi end */}
-
-                        {/* Share */}
                     </div>
                 </Modal>
             </div>
