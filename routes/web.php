@@ -44,7 +44,6 @@ Route::get('/dashboard/natal/edit/content', function () {
     return Inertia::render('Invitation/Template/Natal/Content/ContentNatalV1');
 });
 
-
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard/orders', function () {
         return Inertia::render('Dashboard/Orders');
