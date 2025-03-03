@@ -24,10 +24,10 @@ const EventSection = ({ eventName, date, time, location }) => {
                     <span>29 Agustus</span>
                     <span className="border-start px-2">2024</span>
                 </div>
-                <div className="flex w-full justify-center">
+                <div className="flex w-full justify-center ">
                     <a
                         href=""
-                        className="btn btn-lokasi flex gap-1 items-center mt-3 rounded-md p-3"
+                        className="btn btn-lokasi flex gap-1 items-center mt-3 rounded-md p-3 bg-yellow-600"
                     >
                         <img src="/asset-landing-page/location.svg" alt="" />
                         Lihat lokasi

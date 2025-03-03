@@ -53,7 +53,7 @@ function ContentWeddingV1() {
     }, []);
 
     return (
-        <div className="flex flex-col w-screen relative">
+        <div className="flex flex-col w-screen relative wedv1">
             <audio hidden autoPlay loop>
                 <source
                     src="/audio/Yovie-Nuno-Janji-Suci.mp3"
@@ -62,40 +62,40 @@ function ContentWeddingV1() {
             </audio>
 
             <div className="flex lg:w-1/3 mx-auto ">
-                <div className="cover items-center justify-center flex ">
+                <div className="cover-wedv1 items-center justify-center flex ">
                     <img
                         src="/invitation-asset/wedding-v1/item-1.png"
-                        className="item-image-1"
+                        className="wedv1-image-1"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-2.png"
-                        className="item-image-2"
+                        className="wedv1-image-2"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-2.png"
-                        className="item-image-3"
+                        className="wedv1-image-3"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-1.png"
-                        className="item-image-4"
+                        className="wedv1-image-4"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-3.png"
-                        className="item-image-6"
+                        className="wedv1-image-6"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-2.png"
-                        className="item-image-7"
+                        className="wedv1-image-7"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-4.png"
-                        className="item-image-8"
+                        className="wedv1-image-8"
                         alt=""
                     />
                     <QuoteSection
@@ -108,40 +108,40 @@ function ContentWeddingV1() {
             </div>
 
             <div className="flex lg:w-1/3 mx-auto">
-                <div className="cover items-center justify-center flex">
+                <div className="cover-wedv1 items-center justify-center flex">
                     <img
                         src="/invitation-asset/wedding-v1/item-1.png"
-                        className="item-image-1"
+                        className="wedv1-image-1"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-2.png"
-                        className="item-image-2"
+                        className="wedv1-image-2"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-2.png"
-                        className="item-image-3"
+                        className="wedv1-image-3"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-1.png"
-                        className="item-image-4"
+                        className="wedv1-image-4"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-3.png"
-                        className="item-image-6"
+                        className="wedv1-image-6"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-2.png"
-                        className="item-image-7"
+                        className="wedv1-image-7"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-4.png"
-                        className="item-image-8"
+                        className="wedv1-image-8"
                         alt=""
                     />
                     <MempelaiSection groom={groom} bride={bride} />
@@ -149,40 +149,40 @@ function ContentWeddingV1() {
             </div>
 
             <div className="w-full lg:w-1/3 mx-auto">
-                <div className="cover items-center justify-center flex">
+                <div className="cover-wedv1 items-center justify-center flex">
                     <img
                         src="/invitation-asset/wedding-v1/item-1.png"
-                        className="item-image-1"
+                        className="wedv1-image-1"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-2.png"
-                        className="item-image-2"
+                        className="wedv1-image-2"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-2.png"
-                        className="item-image-3"
+                        className="wedv1-image-3"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-1.png"
-                        className="item-image-4"
+                        className="wedv1-image-4"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-3.png"
-                        className="item-image-6"
+                        className="wedv1-image-6"
                         alt=""
                     />
                     <img
                         src="/invitation -asset/wedding-v1/line-2.png"
-                        className="item-image-7"
+                        className="wedv1-image-7"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-4.png"
-                        className="item-image-8"
+                        className="wedv1-image-8"
                         alt=""
                     />
                     <EventSection
@@ -195,40 +195,40 @@ function ContentWeddingV1() {
             </div>
 
             <div className="flex w-full lg:w-1/3 mx-auto">
-                <div className="cover items-center justify-center flex">
+                <div className="cover-wedv1 items-center justify-center flex">
                     <img
                         src="/invitation-asset/wedding-v1/item-1.png"
-                        className="item-image-1"
+                        className="wedv1-image-1"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-2.png"
-                        className="item-image-2"
+                        className="wedv1-image-2"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-2.png"
-                        className="item-image-3"
+                        className="wedv1-image-3"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-1.png"
-                        className="item-image-4"
+                        className="wedv1-image-4"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-3.png"
-                        className="item-image-6"
+                        className="wedv1-image-6"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/line-2.png"
-                        className="item-image-7"
+                        className="wedv1-image-7"
                         alt=""
                     />
                     <img
                         src="/invitation-asset/wedding-v1/item-4.png"
-                        className="item-image-8"
+                        className="wedv1-image-8"
                         alt=""
                     />
                     <PenutupSection

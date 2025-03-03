@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body {
+.natalver1 {
     background-color: #387286;
     color: white;
     font-family: "Poppins", serif;
@@ -9,7 +9,7 @@ body {
     font-size: 12px;
 }
 
-body::-webkit-scrollbar {
+.natalver1::-webkit-scrollbar {
     display: none;
 }
 
@@ -21,19 +21,19 @@ li {
     list-style-type: none;
 }
 
-.modal-content {
+.modal-content-natv1 {
     background-color: transparent;
     border: none;
 }
 
-.cover {
+.cover-natv1 {
     height: 100vh;
     position: relative;
     background-color: #173a47;
     overflow: hidden;
 }
 
-.overlay {
+.overlay-natv1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,7 +47,7 @@ li {
     z-index: 1;
 }
 
-.cover .item-image-1 {
+.cover-natv1 .item-image-natv1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,7 +55,7 @@ li {
     height: 150px;
     z-index: 5;
 }
-.cover .item-image-2 {
+.cover-natv1 .item-image-2natv1 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,57 +64,83 @@ li {
     z-index: 5;
 }
 
-/* cover content */
+/* cover-natv1 content */
 
-.cover-content {
+.natv1 {
     z-index: 0;
 }
 
-.cover-content h3 {
+.h3-natv1 {
     font-family: "Great Vibes", cursive;
     font-size: 2.5rem;
 }
 
-.cover-content img {
+.img-natv1 {
     width: 100px;
 }
 
-.cover-content p.nama-tamu {
+.text3-natv1 .nama-tamu-natv1 {
     color: #f95d59;
     font-weight: 500;
     font-size: 1rem;
 }
 
-.cover-content a {
+.text4-natv1 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size:14px;
+    margin-bottom: 10%;
+}
+
+.btn-natv1 {
     background-color: #f95d59;
     cursor: pointer;
     color: white;
+    z-index: 999;
+}
+
+.img-natv1 {
+    z-index: -10;
 }
 
 /* salam-content */
 
-.salam-content img {
+.salam-content-natv1 {
     border-radius: 10px;
 }
 
+.text-natv1{
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+}
+
+.text2-natv1{
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 3%;
+}
+
 /* jadwal-content */
-.countdown-box {
+.countdown-box-natv1 {
     background-color: #f88a85;
     border-radius: 15px;
 }
 
-.countdown-box h4,
-.countdown-box p {
+.countdown-box-natv1,
+.countdown-box-natv1 {
     color: #fff;
     margin: 0;
 }
 
-.jadwal-content h3 {
+.jadwal-content-natv1 {
     font-family: "Great Vibes", cursive;
     font-size: 2.5rem;
 }
 
-.jadwal-content p.nama-lokasi {
+.jadwal-content-natv1 .nama-lokasi-natv1 {
     color: #f95d59;
     font-weight: 500;
     font-size: 1rem;
@@ -122,11 +148,11 @@ li {
 
 /* lokasi-content */
 
-.lokasi-content img {
+.lokasi-content-natv1 {
     border-radius: 10px;
 }
 
-.lokasi-content a {
+.lokasi-content-natv1 {
     background-color: #f95d59;
     cursor: pointer;
     color: white;
@@ -134,11 +160,11 @@ li {
 
 /* rsvp-content */
 
-.rsvp-content img {
+.rsvp-content-natv1-img {
     border-radius: 10px;
 }
 
-.rsvp-content a {
+.rsvp-content-btn-natv1 {
     background-color: #f95d59;
     cursor: pointer;
     color: white;
@@ -146,7 +172,7 @@ li {
 
 /* penutup-content */
 
-.penutup-content h3 {
+.penutup-content-natv1 {
     font-family: "Great Vibes", cursive;
     font-size: 2.5rem;
 }

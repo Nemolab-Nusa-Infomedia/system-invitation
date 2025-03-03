@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jacques+Francois+Shadow&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Jacques+Francois+Shadow&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Marcellus&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.container-fluid-khitV1 {
+    min-height: 100vh;
+}
+
+.atass-khitv1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.img-1-khitv1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+.img-2-khitv1 {
+    position: absolute;
+    top: 78px;
+    left: 52%;
+    width: 20%;
+    transform: translate(-50%);
+}
+
+.img-3-khitv1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+}
+
+.title-khitv1{
+    font-family: "Jacques Francois Shadow", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: black;
+    margin-top: 40%;
+}
+
+.text-op-khitv1{
+    font-family: "Marcellus", serif;
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.btn-khitv1 {
+    font-family: "Livvic", serif;
+    font-weight: 400;
+    padding: 7px 7px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #ac881d;
+    border: 2px solid #ac881d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    margin-left: 35%;
+}
+
+.btn-khitv1 .ic-khitv1 {
+    margin-right: 8px;
+}
+
+.btn-khitv1:hover {
+    background-color: transparent;
+    color: #ac881d;
+}
+
+.btn-khitv1:hover .ic-khitv1 {
+    color: #ac881d;
+}
+
+.btn-khitv1:focus {
+    outline: none;
+}
+
+.bawahh-khitv1 {
+    position: relative;
+    width: 35%;
+    height: 30px;
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.bawah-khitv1 {
+    position: absolute;
+    bottom: 0;
+    right: -290px;
+    width: 225px;
+    z-index: 1;
+}
+
+.bawah2-khitv1 {
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 225px;
+    z-index: 1;
+}
+
+.bawah-lagi-khitv1 {
+    position: absolute;
+    bottom: 0;
+    right: -290px;
+    width: 225px;
+    z-index: 2;
+}
+
+.bawah2-lagi-khitv1 {
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 225px;
+    z-index: 2;
+}
+
+/* CONTENT */
+
+.bhismillah-khitv1{
+    font-family: "Nunito", serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: black;
+    margin-top: 44%;
+}
+
+.text-content-khitv1{
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.name-khitv1{
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #66A97F;
+}
+
+.img-btm-khitv1 {
+    position: relative;
+    width: 35%;
+    height: 45px;
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.img-btm-right2-khitv1 {
+    position: absolute;
+    bottom: 0;
+    right: -290px;
+    width: 225px;
+    z-index: 1;
+}
+
+.img-btm-left2-khitv1 {
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 225px;
+    z-index: 1;
+}
+
+.img-btm-right1-khitv1 {
+    position: absolute;
+    bottom: 0;
+    right: -290px;
+    width: 225px;
+    z-index: 2;
+}
+
+.img-btm-left1-khitv1 {
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    width: 225px;
+    z-index: 2;
+}
+
+/* PAGE 2 */
+
+.event-khitv1{
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin-top: 45%;
+}
+
+.event-text-khitv1{
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10%;
+}
+
+.event-addres-khitv1{
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+}
+
+.countdown-khitv1 {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    margin-bottom: 15%;
+}
+
+.countdown-box-khitv1 {
+    background: #C6B147;
+    padding: 0.6rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 70px;
+}
+
+.countdown-value-khitv1 {
+    color: #000000;
+    font-family: "Livvic", serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 0.20rem;
+}
+
+.countdown-label-khitv1 {
+    color: #000000;
+    font-size: 15px;
+}
+
+/* PAGE 3 */
+.gmaps-khitv1{
+    margin-top: 23%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    margin-bottom: 6%;
+}
+
+.btn-addres-invit-khitv1{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    z-index: 5;
+}
+
+.btn-addres-khitv1 {
+    font-family: "Livvic", serif;
+    font-weight: 400;
+    padding: 10px 30px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #ac881d;
+    border: 2px solid #ac881d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.btn-addres-khitv1{
+    margin-right: 8px;
+}
+
+.btn-addres-khitv1:hover {
+    background-color: transparent;
+    color: #ac881d;
+}
+
+.btn-addres-khitv1:hover {
+    color: #ac881d;
+}
+
+.btn-addres-khitv1:focus {
+    outline: none;
+}

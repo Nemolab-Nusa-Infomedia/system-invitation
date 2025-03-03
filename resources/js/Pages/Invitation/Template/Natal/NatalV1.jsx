@@ -3,7 +3,7 @@ import "../css/natal-v1/main.css";
 
 function NatalV1() {
     return (
-        <div>
+        <div className="natalver1">
             <audio hidden autoPlay loop>
                 <source
                     src="/audio/Nothings Gonna Change My Love For You.mp3"
@@ -13,7 +13,7 @@ function NatalV1() {
 
             <div className="flex w-1/3 mx-auto justify-center">
                 <div
-                    className="cover w-full  items-center justify-center flex"
+                    className="cover-natv1 w-full  items-center justify-center flex"
                     style={{
                         backgroundImage:
                             "url('/invitation-asset/natal-v1/background-section.jpg')",
@@ -23,35 +23,35 @@ function NatalV1() {
                         data-aos="zoom-in-down"
                         data-aos-duration="3000"
                         src="/invitation-asset/natal-v1/item-1.png"
-                        className="item-image-1"
+                        className="item-image-natv1"
                         alt=""
                     />
                     <img
                         data-aos="zoom-in-up"
                         data-aos-duration="3000"
                         src="/invitation-asset/natal-v1/item-2.png"
-                        className="item-image-2"
+                        className="item-image-2natv1"
                         alt=""
                     />
 
                     <div
-                        className="cover-content flex flex-col items-center gap-3 text-center p-2 "
+                        className="natv1 flex flex-col items-center gap-3 text-center p-2 "
                         data-aos="zoom-in-up"
                         data-aos-duration="3000"
                     >
-                        <p>You are invited to</p>
-                        <h3>Christmast Party</h3>
+                        <p className="text3-natv1">You are invited to</p>
+                        <h3 className="h3-natv1">Christmast Party</h3>
                         <p>at Wyndham Hotel, Surabaya</p>
                         <img
                             src="/invitation-asset/natal-v1/items-3.png"
-                            className="mb-3"
+                            className="mb-3 img-natv1"
                             alt=""
                         />
                         <p>Kepada Yth;</p>
-                        <p className="nama-tamu">Vindra Arya Yulian</p>
+                        <p className="nama-tamu-natv1">Vindra Arya Yulian</p>
                         <a
-                            href="/dashboard/natal/edit/conten"
-                            className="py-2 px-5  rounded-full text-base hover:bg-transparent transition-all"
+                            href="/dashboard/natal/edit/content"
+                            className="py-2 px-5 rounded-full text-base hover:bg-transparent transition-all btn-natv1"
                         >
                             Open Invitation
                         </a>
