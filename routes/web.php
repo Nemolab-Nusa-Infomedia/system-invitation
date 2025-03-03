@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Application;
+use App\Http\Controllers\SampulController;
+use App\Http\Controllers\ProfileController;
 
 
 
@@ -29,14 +30,15 @@ Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/dashboard/invitation/edit', function () {
+/* Route::get('/dashboard/invitation/edit', function () {
     return Inertia::render('Invitation/Invitation');
-});
+}); */
 
 Route::get('/dashboard/wedding/edit/content', function () {
     return Inertia::render('Invitation/Template/Wedding/Content/ContentWeddingV1');
 });
 
+Route::get('/dashboard/invitation/edit', [SampulController::class, 'index' ]);
 Route::get('/dashboard/khitan/edit/content', function () {
     return Inertia::render('Invitation/Template/Khitan/Content/ContentKhitanV1');
 });

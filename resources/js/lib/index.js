@@ -243,3 +243,158 @@ export const Paket = [
         ],
     },
 ];
+
+//  data menu navabr bottom halaman edit
+import { FiMenu } from "react-icons/fi";
+import {
+    FaCog,
+    FaLock,
+    FaEye,
+    FaImage,
+    FaScroll,
+    FaHome,
+} from "react-icons/fa";
+import {
+    BsMusicNoteBeamed,
+    BsPaletteFill,
+    BsGiftFill,
+    BsFillGrid1X2Fill,
+} from "react-icons/bs";
+import { IoNotifications, IoQrCodeSharp } from "react-icons/io5";
+import { IoLogoWhatsapp, IoIosCreate } from "react-icons/io";
+import { MdDashboard } from "react-icons/md";
+import { RiColorFilterFill } from "react-icons/ri";
+import { BiSolidReport } from "react-icons/bi";
+
+export const listNav = [
+    {
+        name: "Menu",
+        icon: FiMenu,
+    },
+    {
+        name: "Pengaturan",
+        icon: FaCog,
+    },
+    {
+        name: "Pratinjau",
+        icon: FaEye,
+    },
+    {
+        name: "Aktivasi",
+        icon: FaLock,
+    },
+];
+
+export const listMenuNav = [
+    {
+        icon: MdDashboard,
+        name: "Dashboard Admin",
+        description: "Lihat daftar acara yang dibuat dan keloka akun anda",
+    },
+    {
+        icon: IoIosCreate,
+        name: "Buat Acara Baru",
+        description: "Ulang buat acara untuk hasil yang lebih fresh",
+    },
+    {
+        icon: BiSolidReport,
+        name: "Laporan Kehadiran",
+        description:
+            "Lihat siapa yang mengkonfirmasi hadir dan balas ucapannya",
+    },
+    {
+        icon: IoQrCodeSharp,
+        name: "Laporan QRCode Buku Tamu",
+        description: "Lihat siapa yang telah mengisi buku tamu di acara annda",
+    },
+    {
+        icon: FaHome,
+        name: "Laporan Sebar Undangan",
+        description:
+            "Lihat berapa orang yang melihat undangan dan laporan lainnya",
+    },
+    {
+        icon: FaHome,
+        name: "Laporan Kado Fisik",
+        description:
+            "Lihat tamu undangan yang memberikan kado fisik ke acara anda",
+    },
+    {
+        icon: FaHome,
+        name: "Laporan Kado Virtual",
+        description:
+            "Lihat tamu undangan yang memberikan kado virtual ke acara anda",
+    },
+    {
+        icon: FaHome,
+        name: "Masukkan dan Saran",
+        description:
+            "Berikan masukkan & saran untuk kami bisa terus berkembang dan melayani anda",
+    },
+];
+
+export const listPengaturanNav = [
+    {
+        icon: BsFillGrid1X2Fill,
+        name: "Komponen Undangan",
+        description: "Ubah urutan undangan atau sembunyikan komponen yang ada",
+    },
+    {
+        icon: BsPaletteFill,
+        name: "Tema",
+        description: "Ubah tema undangan tanpa batas",
+    },
+    {
+        icon: BsMusicNoteBeamed,
+        name: "Musik",
+        description: "Ubah musik atau upload musik Anda sendiri",
+    },
+    {
+        icon: RiColorFilterFill,
+        name: "Warna & Font Tema",
+        description: "Ubah warna dan jenis font sesuai selera Anda",
+    },
+    {
+        icon: FaImage,
+        name: "Foto Sampul",
+        description: "Ubah fot sampul pada undangan",
+    },
+    {
+        icon: FaHome,
+        name: "Sampul Depan",
+        description: "Sesuaikan tulisan pada sampul depan undangan",
+    },
+    {
+        icon: FaHome,
+        name: "Custom Form Kehadiran",
+        description: "Tambahkan isian form baru pada form kehadiran",
+    },
+    {
+        icon: FaScroll,
+        name: "Auto Scroll",
+        description: "Sesuaikan fitur Auto Scroll pada undangan",
+    },
+    {
+        icon: IoLogoWhatsapp,
+        name: "Tampilan WhatsApp",
+        description:
+            "Sesuaikan preview undangan ketika disebar ke sosial media lainnya",
+    },
+    {
+        icon: BsGiftFill,
+        name: "Kado Fisik",
+        description: "Pilih kado fisik yang akan ditampilkan pada undangan",
+    },
+    {
+        icon: IoNotifications,
+        name: "Notifikasi",
+        description:
+            "Atur notifikasi ketika anda yang memberikan konfirmasi kehadiran",
+    },
+    {
+        icon: FaCog,
+        name: "Pengaturan Lainnya",
+        description: "Lihat pengaturan lainnya di undangan",
+    },
+];
+//

@@ -1,6 +1,7 @@
 import FormMempelai from "@/Pages/Invitation/Form_Section/Wedding/FormMepelai";
 import Modal from "../Modal";
 import { useState, useEffect, useCallback } from "react";
+import { motion } from "framer-motion";
 const MempelaiSection = ({ groom, bride }) => {
     const [isModalOpen, setModalOpen] = useState(false);
 
@@ -9,33 +10,40 @@ const MempelaiSection = ({ groom, bride }) => {
 
     return (
         <div className="mempelai-content text-center p-3 ">
-            <div
-                className="border border-dashed cursor-text"
-                onClick={() => handleOpenModal()}
+            <motion.div
+                animate={{ scale: 0.5, opacity: 0 }}
+                transition={{ duration: 1, type: "keyframes" }}
+                whileInView={{ scale: 1, opacity: 1 }}
             >
-                <div className="">
-                    <h5 className="mb-3">
-                        بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ
-                    </h5>
-                    <i>Assalamu'alaikum Warahmatullahi Wabarakatuh</i>
-                    <p className="mt-4 mb-4">
-                        Maha suci Allah SWT, yang telah menciptakan makhluk-Nya
-                        berpasang-pasangan, Ya Allah, dengan kerendahan hati,
-                        perkenankanlah kami menikahkan putri-putri kami:
-                    </p>
-                </div>
-                <div className="nama-mempelai  mt-2">
-                    <div className="mempelai-pria ">
-                        <h3>{groom.name}</h3>
-                        <p>Putra dari {groom.parents}</p>
+                <div
+                    className="border border-dashed cursor-text"
+                    onClick={() => handleOpenModal()}
+                >
+                    <div className="">
+                        <h5 className="mb-3">
+                            بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيْمِ
+                        </h5>
+                        <i>Assalamu'alaikum Warahmatullahi Wabarakatuh</i>
+                        <p className="mt-4 mb-4">
+                            Maha suci Allah SWT, yang telah menciptakan
+                            makhluk-Nya berpasang-pasangan, Ya Allah, dengan
+                            kerendahan hati, perkenankanlah kami menikahkan
+                            putri-putri kami:
+                        </p>
                     </div>
-                    <span>dengan</span>
-                    <div className="mempelai-wanita">
-                        <h3>{bride.name}</h3>
-                        <p>Putri dari {bride.parents}</p>
+                    <div className="nama-mempelai  mt-2">
+                        <div className="mempelai-pria ">
+                            <h3>{groom.name}</h3>
+                            <p>Putra dari {groom.parents}</p>
+                        </div>
+                        <span>dengan</span>
+                        <div className="mempelai-wanita">
+                            <h3>{bride.name}</h3>
+                            <p>Putri dari {bride.parents}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             <Modal show={isModalOpen} onClose={handleCloseModal}>
                 <FormMempelai onClose={handleCloseModal} />
